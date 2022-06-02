@@ -5,11 +5,96 @@
           box-sizing: border-box;
 }
 
-header .container-fluid .row .covid {
-  padding: 8px 0;
+body {
+  height: 2000px;
+}
+
+body header .container-fluid .covid-nav .covid {
+  padding: 10px 0;
+  font-size: 14px;
   background-color: #233A95FF;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+}
+
+body header .container-fluid .second-nav {
+  border-bottom: 0.2px solid #cdcdcd;
+}
+
+body header .container-fluid .second-nav ul {
+  border: none;
+}
+
+body header .container-fluid .second-nav ul li a {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6b6b6b;
+}
+
+body header .container-fluid .second-nav .left-second-nav {
+  margin-left: 8%;
+}
+
+body header .container-fluid .second-nav .middle-second-nav {
+  padding: 11px 0;
+  font-size: 13px;
+}
+
+body header .container-fluid .second-nav .middle-second-nav .slash {
+  color: #cdcdcd;
+}
+
+body header .container-fluid .second-nav .middle-second-nav .numb {
+  color: #2BC7FBFF;
+  font-weight: bold;
+}
+
+body header .container-fluid .second-nav .last-second-nav {
+  border-left: 1px solid #cdcdcd;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnT {
+  border: none;
+  position: relative;
+  padding: 11px;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover {
+  border: none;
+  color: #2BC7FBFF;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover + .drpdwnM {
+  display: block;
+  padding: 5px 30px;
+  text-align: left;
+  background: #e3dada;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: none;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnM a {
+  padding: 3px 0px;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnM a:hover {
+  color: #2BC7FBFF;
 }
 /*# sourceMappingURL=main.css.map */
