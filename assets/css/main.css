@@ -34,7 +34,7 @@ body header .container-fluid .second-nav ul li a {
 }
 
 body header .container-fluid .second-nav .left-second-nav {
-  margin-left: 8%;
+  padding: 2px;
 }
 
 body header .container-fluid .second-nav .middle-second-nav {
@@ -48,6 +48,7 @@ body header .container-fluid .second-nav .middle-second-nav .slash {
 
 body header .container-fluid .second-nav .middle-second-nav .numb {
   color: #2BC7FBFF;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -59,6 +60,10 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnT {
   border: none;
   position: relative;
   padding: 11px;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover {
@@ -67,10 +72,10 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover {
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover + .drpdwnM {
-  display: block;
-  padding: 5px 30px;
+  visibility: visible;
+  padding: 5px 34px;
   text-align: left;
-  background: #e3dada;
+  background: #f4f4f4;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM {
@@ -78,7 +83,9 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnM {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  left: -15px;
+  overflow: hidden;
+  left: -20px;
+  top: 44px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -87,7 +94,14 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnM {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  display: none;
+  visibility: hidden;
+}
+
+body header .container-fluid .second-nav .last-second-nav .drpdwnM:hover {
+  visibility: visible;
+  padding: 5px 34px;
+  text-align: left;
+  background: #f4f4f4;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM a {
