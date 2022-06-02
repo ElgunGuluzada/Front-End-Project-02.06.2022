@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    .container-fluid {
+        .row {
+            .covid {
+                padding: 8px 0;
+                background-color: #233A95FF;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter
+            }
+        }
+    }
+}
