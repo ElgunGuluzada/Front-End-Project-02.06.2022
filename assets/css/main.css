@@ -236,51 +236,39 @@ body header .main-navBar nav {
   font-weight: 600;
 }
 
-body header .main-navBar nav :first-child li:hover .HomeSubMenu {
-  margin-top: 24.5px;
-  visibility: visible;
-  background-color: white;
-}
-
 body header .main-navBar nav ul {
   text-decoration: none;
   list-style: none;
 }
 
-body header .main-navBar nav ul li {
-  padding: 0px !important;
-  text-decoration: none;
+body header .main-navBar nav ul .home {
+  height: 50px;
   position: relative;
 }
 
-body header .main-navBar nav ul li a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 15px;
-}
-
-body header .main-navBar nav ul li a:hover {
-  border-radius: 30px;
-  background-color: #cbeaff;
-  color: #2BC7FBFF;
-}
-
-body header .main-navBar nav ul li .HomeSubMenu {
-  position: absolute;
-  visibility: hidden;
-  width: 200px;
-  left: -15px;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-body header .main-navBar nav ul li .HomeSubMenu:hover {
+body header .main-navBar nav ul .home:hover .HomeSubMenu {
   margin-top: 24.5px;
   visibility: visible;
   background-color: white;
 }
 
-body header .main-navBar nav ul li .HomeSubMenu li {
+body header .main-navBar nav ul .home .HomeSubMenu {
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  left: -24px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+body header .main-navBar nav ul .home .HomeSubMenu:hover {
+  visibility: visible;
+  background-color: white;
+}
+
+body header .main-navBar nav ul .home .HomeSubMenu li {
   margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,14 +279,129 @@ body header .main-navBar nav ul li .HomeSubMenu li {
           flex-direction: column;
 }
 
-body header .main-navBar nav ul li .HomeSubMenu li a {
+body header .main-navBar nav ul .home .HomeSubMenu li a {
   padding: 5px 55px 0px 5px;
   width: 100%;
 }
 
-body header .main-navBar nav ul li .HomeSubMenu li a:hover {
+body header .main-navBar nav ul .home .HomeSubMenu li a:hover {
   padding: 5px 55px 0px 5px;
   background-color: white;
+  color: #2BC7FBFF;
+}
+
+body header .main-navBar nav ul .shop {
+  height: 50px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 350px;
+  left: 0;
+  background: white;
+  width: 80%;
+  margin-top: 24.5px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+body header .main-navBar nav ul .shop .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+body header .main-navBar nav ul .shop:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  visibility: visible;
+  height: 350px;
+  left: 2.8%;
+  background: white;
+  width: 80%;
+  margin-top: 24.5px;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu > li {
+  position: relative;
+  margin-top: 20px;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu > li .subListMenu {
+  position: absolute;
+  left: -15px;
+  padding: 15px;
+  width: 210px;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu > li .subListMenu li {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu > li .subListMenu li a {
+  top: 15px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+body header .main-navBar nav ul .shop:hover .ShopSubMenu > li > a {
+  color: blue;
+  border: none;
+  background: white;
+}
+
+body header .main-navBar nav ul li {
+  padding: 0px !important;
+}
+
+body header .main-navBar nav ul li > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+body header .main-navBar nav ul li > a:hover {
+  padding: 10px 15px;
+  border-radius: 30px;
+  background-color: #cbeaff;
   color: #2BC7FBFF;
 }
 /*# sourceMappingURL=main.css.map */

@@ -241,40 +241,20 @@ body {
                 font-size: 14px;
                 font-weight: 600;
 
-                :first-child {
-                    li {
-                        &:hover {
-                            .HomeSubMenu {
-                                margin-top: 24.5px;
-                                visibility: visible;
-                                background-color: white;
-                            }
-
-                        }
-                    }
-
-
-                }
 
                 ul {
                     text-decoration: none;
                     list-style: none;
 
-                    li {
-                        padding: 0px !important;
-                        text-decoration: none;
+                    .home {
+                        height: 50px;
                         position: relative;
 
-                        a {
-                            text-decoration: none;
-                            color: black;
-                            padding: 10px 15px;
-
-                            &:hover {
-                                // padding: 10px 15px;
-                                border-radius: 30px;
-                                background-color: rgb(203, 234, 255);
-                                color: #2BC7FBFF;
+                        &:hover {
+                            .HomeSubMenu {
+                                margin-top: 24.5px;
+                                visibility: visible;
+                                background-color: white;
                             }
                         }
 
@@ -282,11 +262,12 @@ body {
                             position: absolute;
                             visibility: hidden;
                             width: 200px;
-                            left: -15px;
+                            left: -24px;
                             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            transition: all 0.1s ease-in-out;
+
 
                             &:hover {
-                                margin-top: 24.5px;
                                 visibility: visible;
                                 background-color: white;
                             }
@@ -308,6 +289,115 @@ body {
                                 }
                             }
                         }
+                    }
+
+                    .shop {
+                        height: 50px;
+
+                        .ShopSubMenu {
+                            visibility: hidden;
+                            position: absolute;
+                            display: flex;
+                            justify-content: space-around;
+                            height: 350px;
+                            left: 0;
+                            background: white;
+                            width: 80%;
+                            margin-top: 24.5px;
+
+                            >li {
+                                position: relative;
+                                margin-top: 20px;
+
+                                .subListMenu {
+                                    position: absolute;
+                                    left: -15px;
+                                    padding: 15px;
+                                    width: 210px;
+
+                                    li {
+                                        padding: 15px;
+                                        margin-top: 15px;
+
+                                        a {
+                                            top: 15px;
+                                            background-color: white;
+                                            margin-top: 15px;
+                                        }
+                                    }
+                                }
+
+                                >a {
+                                    color: blue;
+                                    border: none;
+                                    background: white;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            transition: all 0.3s ease-in-out;
+
+                            .ShopSubMenu {
+                                display: flex;
+                                justify-content: space-around;
+                                visibility: visible;
+                                height: 350px;
+                                left: 2.8%;
+                                background: white;
+                                width: 80%;
+                                margin-top: 24.5px;
+                                transition-delay: 0.1s;
+
+                                >li {
+                                    position: relative;
+                                    margin-top: 20px;
+
+                                    .subListMenu {
+                                        position: absolute;
+                                        left: -15px;
+                                        padding: 15px;
+                                        width: 210px;
+
+                                        li {
+                                            padding: 15px;
+                                            margin-top: 15px;
+
+                                            a {
+                                                top: 15px;
+                                                background-color: white;
+                                                margin-top: 15px;
+                                            }
+                                        }
+                                    }
+
+                                    >a {
+                                        color: blue;
+                                        border: none;
+                                        background: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    li {
+                        padding: 0px !important;
+
+                        >a {
+                            text-decoration: none;
+                            color: black;
+                            padding: 10px 15px;
+
+                            &:hover {
+                                padding: 10px 15px;
+                                border-radius: 30px;
+                                background-color: rgb(203, 234, 255);
+                                color: #2BC7FBFF;
+                            }
+                        }
+
+
                     }
 
                 }
