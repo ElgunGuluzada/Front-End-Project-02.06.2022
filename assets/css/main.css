@@ -10,8 +10,8 @@ body {
 }
 
 body header .container-fluid .covid-nav .covid {
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12.5px;
   background-color: #233A95FF;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -27,19 +27,30 @@ body header .container-fluid .second-nav ul {
 }
 
 body header .container-fluid .second-nav ul li a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 200;
   font-family: Arial, Helvetica, sans-serif;
   color: #6b6b6b;
+  border: none;
+  padding: auto 1px !important;
+}
+
+body header .container-fluid .second-nav ul li a:hover {
+  color: #2BC7FBFF;
 }
 
 body header .container-fluid .second-nav .left-second-nav {
-  padding: 2px;
+  margin-left: 8.33%;
+}
+
+body header .container-fluid .second-nav .left-second-nav a {
+  padding: 12px 6px !important;
+  font-size: 12px;
 }
 
 body header .container-fluid .second-nav .middle-second-nav {
   padding: 11px 0;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 body header .container-fluid .second-nav .middle-second-nav .slash {
@@ -48,7 +59,7 @@ body header .container-fluid .second-nav .middle-second-nav .slash {
 
 body header .container-fluid .second-nav .middle-second-nav .numb {
   color: #2BC7FBFF;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -59,23 +70,15 @@ body header .container-fluid .second-nav .last-second-nav {
 body header .container-fluid .second-nav .last-second-nav .drpdwnT {
   border: none;
   position: relative;
-  padding: 11px;
-  -webkit-transition: height 0.3s ease-in-out;
-  transition: height 0.3s ease-in-out;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover {
-  border: none;
-  color: #2BC7FBFF;
+  padding: 12px;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnT:hover + .drpdwnM {
   visibility: visible;
-  padding: 5px 34px;
-  text-align: left;
-  background: #f4f4f4;
+  padding: 20px 34px;
+  background: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM {
@@ -99,9 +102,10 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnM {
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM:hover {
   visibility: visible;
-  padding: 5px 34px;
-  text-align: left;
-  background: #f4f4f4;
+  padding: 20px 34px;
+  background: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM a {
@@ -110,5 +114,25 @@ body header .container-fluid .second-nav .last-second-nav .drpdwnM a {
 
 body header .container-fluid .second-nav .last-second-nav .drpdwnM a:hover {
   color: #2BC7FBFF;
+}
+
+body header .container-fluid .third-nav {
+  padding: 24px 0;
+  padding-left: 7%;
+  display: inline;
+}
+
+body header .container-fluid .third-nav img {
+  width: 160px;
+}
+
+body header .container-fluid .third-nav .logoTitle {
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px 0;
+  opacity: 0.3;
+  padding-left: 3.3%;
 }
 /*# sourceMappingURL=main.css.map */

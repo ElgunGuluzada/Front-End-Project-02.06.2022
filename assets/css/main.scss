@@ -11,8 +11,8 @@ body {
         .container-fluid {
             .covid-nav {
                 .covid {
-                    padding: 10px 0;
-                    font-size: 14px;
+                    padding: 8px 0;
+                    font-size: 12.5px;
                     background-color: #233A95FF;
                     color: white;
                     font-family: Arial, Helvetica, sans-serif;
@@ -28,21 +28,34 @@ body {
 
                     li {
                         a {
-                            font-size: 14px;
+                            font-size: 13px;
                             font-weight: 200;
                             font-family: Arial, Helvetica, sans-serif;
                             color: rgb(107, 107, 107);
+                            border: none;
+                            padding: auto 1px !important;
+
+                            &:hover {
+                                color: #2BC7FBFF;
+                            }
                         }
+
+
                     }
                 }
 
                 .left-second-nav {
-                    padding: 2px;
+                    margin-left: 8.33%;
+
+                    a {
+                        padding: 12px 6px !important;
+                        font-size: 12px;
+                    }
                 }
 
                 .middle-second-nav {
                     padding: 11px 0;
-                    font-size: 13px;
+                    font-size: 11px;
 
                     .slash {
                         color: rgb(205, 205, 205);
@@ -50,7 +63,7 @@ body {
 
                     .numb {
                         color: #2BC7FBFF;
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: bold;
                     }
                 }
@@ -61,20 +74,13 @@ body {
                     .drpdwnT {
                         border: none;
                         position: relative;
-                        padding: 11px;
-                        transition: height 0.3s ease-in-out;
-                        transition-delay: 0.1s;
-
-                        &:hover {
-                            border: none;
-                            color: #2BC7FBFF;
-                        }
+                        padding: 12px;
 
                         &:hover+.drpdwnM {
                             visibility: visible;
-                            padding: 5px 34px;
-                            text-align: left;
-                            background: rgb(244, 244, 244);
+                            padding: 20px 34px;
+                            background: white;
+                            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
                         }
                     }
 
@@ -92,9 +98,9 @@ body {
 
                         &:hover {
                             visibility: visible;
-                            padding: 5px 34px;
-                            text-align: left;
-                            background: rgb(244, 244, 244);
+                            padding: 20px 34px;
+                            background: white;
+                            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
                         }
 
                         a {
@@ -107,6 +113,24 @@ body {
 
                     }
 
+                }
+            }
+
+            .third-nav {
+                padding: 24px 0;
+                padding-left: 7%;
+                display: inline;
+
+                img {
+                    width: 160px;
+                }
+                
+                .logoTitle {
+                    font-size: 11px;
+                    display: flex;
+                    padding: 3px 0;
+                    opacity: 0.3;
+                    padding-left: 3.3%;
                 }
             }
         }
