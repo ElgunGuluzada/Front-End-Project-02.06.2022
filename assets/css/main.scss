@@ -228,5 +228,90 @@ body {
 
 
         }
+
+        .main-navBar {
+            button {
+                border-radius: 20px;
+                padding: 10px 35px 10px 25px;
+                color: white;
+                font-weight: 600;
+            }
+
+            nav {
+                font-size: 14px;
+                font-weight: 600;
+
+                :first-child {
+                    li {
+                        &:hover {
+                            .HomeSubMenu {
+                                margin-top: 24.5px;
+                                visibility: visible;
+                                background-color: white;
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                ul {
+                    text-decoration: none;
+                    list-style: none;
+
+                    li {
+                        padding: 0px !important;
+                        text-decoration: none;
+                        position: relative;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            padding: 10px 15px;
+
+                            &:hover {
+                                // padding: 10px 15px;
+                                border-radius: 30px;
+                                background-color: rgb(203, 234, 255);
+                                color: #2BC7FBFF;
+                            }
+                        }
+
+                        .HomeSubMenu {
+                            position: absolute;
+                            visibility: hidden;
+                            width: 200px;
+                            left: -15px;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                            &:hover {
+                                margin-top: 24.5px;
+                                visibility: visible;
+                                background-color: white;
+                            }
+
+                            li {
+                                margin: 15px 0;
+                                display: flex;
+                                flex-direction: column;
+
+                                a {
+                                    padding: 5px 55px 0px 5px;
+                                    width: 100%;
+
+                                    &:hover {
+                                        padding: 5px 55px 0px 5px;
+                                        background-color: white;
+                                        color: #2BC7FBFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }

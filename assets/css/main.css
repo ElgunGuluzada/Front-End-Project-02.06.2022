@@ -223,4 +223,82 @@ body header .head-nav .third-nav .right-third-nav .basket .basketIcon .count {
   right: -5px;
   top: -2px;
 }
+
+body header .main-navBar button {
+  border-radius: 20px;
+  padding: 10px 35px 10px 25px;
+  color: white;
+  font-weight: 600;
+}
+
+body header .main-navBar nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+body header .main-navBar nav :first-child li:hover .HomeSubMenu {
+  margin-top: 24.5px;
+  visibility: visible;
+  background-color: white;
+}
+
+body header .main-navBar nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+body header .main-navBar nav ul li {
+  padding: 0px !important;
+  text-decoration: none;
+  position: relative;
+}
+
+body header .main-navBar nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+body header .main-navBar nav ul li a:hover {
+  border-radius: 30px;
+  background-color: #cbeaff;
+  color: #2BC7FBFF;
+}
+
+body header .main-navBar nav ul li .HomeSubMenu {
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  left: -15px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body header .main-navBar nav ul li .HomeSubMenu:hover {
+  margin-top: 24.5px;
+  visibility: visible;
+  background-color: white;
+}
+
+body header .main-navBar nav ul li .HomeSubMenu li {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .main-navBar nav ul li .HomeSubMenu li a {
+  padding: 5px 55px 0px 5px;
+  width: 100%;
+}
+
+body header .main-navBar nav ul li .HomeSubMenu li a:hover {
+  padding: 5px 55px 0px 5px;
+  background-color: white;
+  color: #2BC7FBFF;
+}
 /*# sourceMappingURL=main.css.map */
