@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/9891a9465b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <title>Front End Project</title>
@@ -15,13 +17,10 @@
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid head-nav">
             <div class="row covid-nav">
-                <div class="covid d-flex justify-content-center fw-light">
-                    Due to the <span id="covidSpan" class="px-1 fw-bold"> COVID 19 </span> epidemic, orders may be
-                    processed
-                    with a slight
-                    delay
+                <div class="covid d-flex justify-content-center fw-light"> Due to the <span id="covidSpan"
+                        class="px-1 fw-bold"> COVID 19 </span> epidemic, orders may be processed with a slight delay
                 </div>
             </div>
             <div class="row second-nav col-12 d-flex justify-content-between">
@@ -67,9 +66,26 @@
                 </ul>
             </div>
             <div class="row col-12 d-flex third-nav">
-                <div class="col-1 img px-5"><img src="/assets/img/bacola-logo.png" alt="">
+                <div class="col-2 img"><img src="/assets/img/bacola-logo.png" alt="">
+                    <p class="logoTitle">Online Grocery Shopping Center</p>
                 </div>
-                <p class="logoTitle">Online Grocery Shopping Center</p>
+                <div class="col-2 ">
+                    <div class="location d-flex">
+                        <span class="title">Your Location</span>
+                        <span class="content">Select Location</span>
+                    </div>
+                </div>
+                <div class="col-5 searchProduct ">
+                    <input type="text" placeholder="Search for products...">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <div class="right-third-nav col-3 d-flex justify-content-start">
+                    <div class="userIcon"><i class="fas fa-user"></i></div>
+                    <div class="basket px-3">
+                        <span class="price">$0.00</span>
+                        <i class='bx bx-basket bx-tada basketIcon'><span class="count">0</span></i>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
