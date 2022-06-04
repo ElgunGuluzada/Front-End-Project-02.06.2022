@@ -5,8 +5,6 @@
 }
 
 body {
-    height: 2000px;
-
     header {
         .head-nav {
             .covid-nav {
@@ -255,6 +253,7 @@ body {
                                 margin-top: 24.5px;
                                 visibility: visible;
                                 background-color: white;
+                                z-index: 2;
                             }
                         }
 
@@ -265,6 +264,8 @@ body {
                             left: -24px;
                             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                             transition: all 0.1s ease-in-out;
+                            background: white;
+                            z-index: 2;
 
 
                             &:hover {
@@ -301,9 +302,10 @@ body {
                             justify-content: space-around;
                             height: 350px;
                             left: 0;
+                            width: 98.93vw;
                             background: white;
-                            width: 80%;
                             margin-top: 24.5px;
+                            z-index: 2;
 
                             >li {
                                 position: relative;
@@ -343,11 +345,11 @@ body {
                                 justify-content: space-around;
                                 visibility: visible;
                                 height: 350px;
-                                left: 2.8%;
                                 background: white;
-                                width: 80%;
+                                width: 98.93vw;
                                 margin-top: 24.5px;
                                 transition-delay: 0.1s;
+                                z-index: 2;
 
                                 >li {
                                     position: relative;
@@ -402,6 +404,74 @@ body {
 
                 }
             }
+        }
+    }
+
+    main {
+        section {
+
+            #carousel-container {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: -27.5px;
+                width: 100%;
+                position: relative;
+            }
+
+            #carousel-container>div:first-child {
+                overflow: hidden;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            #carousel {
+                position: relative;
+                width: 4000px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .animate {
+                -webkit-transition-duration: .5s;
+                -moz-transition-duration: .5s;
+                -o-transition-duration: .5s;
+                transition-duration: .5s;
+                -webkit-transition-property: -webkit-transform;
+                -moz-transition-property: -moz-transform;
+                -o-transition-property: -o-transform;
+                transition-property: transform;
+            }
+
+            .slide {
+                list-style: none;
+                position: relative;
+                float: left;
+            }
+
+            #controls {
+                position: absolute;
+                top: 0;
+            }
+
+            #controls span {
+                width: 50px;
+                cursor: pointer;
+                opacity: 0.4;
+            }
+
+            #controls span:hover {
+                opacity: 1;
+            }
+
+            #prev {
+                float: left;
+            }
+
+            #next {
+                float: right;
+            }
+
+
         }
     }
 }

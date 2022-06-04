@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-body {
-  height: 2000px;
-}
-
 body header .head-nav .covid-nav .covid {
   padding: 0 auto;
   padding: 8px 0;
@@ -250,6 +246,7 @@ body header .main-navBar nav ul .home:hover .HomeSubMenu {
   margin-top: 24.5px;
   visibility: visible;
   background-color: white;
+  z-index: 2;
 }
 
 body header .main-navBar nav ul .home .HomeSubMenu {
@@ -261,6 +258,8 @@ body header .main-navBar nav ul .home .HomeSubMenu {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  background: white;
+  z-index: 2;
 }
 
 body header .main-navBar nav ul .home .HomeSubMenu:hover {
@@ -304,9 +303,10 @@ body header .main-navBar nav ul .shop .ShopSubMenu {
       justify-content: space-around;
   height: 350px;
   left: 0;
+  width: 98.93vw;
   background: white;
-  width: 80%;
   margin-top: 24.5px;
+  z-index: 2;
 }
 
 body header .main-navBar nav ul .shop .ShopSubMenu > li {
@@ -351,12 +351,12 @@ body header .main-navBar nav ul .shop:hover .ShopSubMenu {
       justify-content: space-around;
   visibility: visible;
   height: 350px;
-  left: 2.8%;
   background: white;
-  width: 80%;
+  width: 98.93vw;
   margin-top: 24.5px;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+  z-index: 2;
 }
 
 body header .main-navBar nav ul .shop:hover .ShopSubMenu > li {
@@ -403,5 +403,68 @@ body header .main-navBar nav ul li > a:hover {
   border-radius: 30px;
   background-color: #cbeaff;
   color: #2BC7FBFF;
+}
+
+body main section #carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: -27.5px;
+  width: 100%;
+  position: relative;
+}
+
+body main section #carousel-container > div:first-child {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+body main section #carousel {
+  position: relative;
+  width: 4000px;
+  padding: 0;
+  margin: 0;
+}
+
+body main section .animate {
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+body main section .slide {
+  list-style: none;
+  position: relative;
+  float: left;
+}
+
+body main section #controls {
+  position: absolute;
+  top: 0;
+}
+
+body main section #controls span {
+  width: 50px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+body main section #controls span:hover {
+  opacity: 1;
+}
+
+body main section #prev {
+  float: left;
+}
+
+body main section #next {
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */
