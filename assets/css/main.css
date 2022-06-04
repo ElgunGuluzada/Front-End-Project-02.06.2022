@@ -462,13 +462,7 @@ body main section #carousel-container #carousel {
 body main section #carousel-container #carousel img {
   width: 100%;
   height: 462px;
-}
-
-body main section #carousel-container #carousel .content {
-  position: absolute;
-  left: 15%;
-  z-index: 15;
-  top: 5%;
+  cursor: pointer;
 }
 
 body main section #carousel-container #carousel .animate {
@@ -484,5 +478,14 @@ body main section #carousel-container #carousel .slide {
   list-style: none;
   position: relative;
   float: left;
+}
+
+body main section #carousel-container #carousel .content {
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+  top: 10%;
+  width: 30%;
 }
 /*# sourceMappingURL=main.css.map */
