@@ -2,28 +2,28 @@ $(document).ready(function () {
     $(".location").click(function () {
         alert("salam")
     })
-
 })
-var index = 0,
+//  Carousel Section Start
+
+
+let index = 0,
     amount = 0,
     currTransl = [],
     translationComplete = true,
     moveOffset = 0;
 
-var transitionCompleted = function () {
+let transitionCompleted = function () {
     translationComplete = true;
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
-    var carousel = document.getElementById('carousel');
-
+document.addEventListener("DOMContentLoaded", function () {
     amount = document.getElementsByClassName("slide").length;
     // get the width of the container
     moveOffset = parseInt(window.getComputedStyle(document.getElementById('carousel-container')).width, 10);
     // calcuate the width of the carousel
     document.getElementById('carousel').style.width = (amount * moveOffset) + 'px';
     // prevent multiple click when transition
-    for (var i = 0; i < amount; i++) {
+    for (let i = 0; i < amount; i++) {
         currTransl[i] = -moveOffset;
         // document.getElementsByClassName("slide")[i].addEventListener("transitionend", transitionCompleted, true);
         document.getElementsByClassName("slide")[i].addEventListener("webkitTransitionEnd", transitionCompleted, true);
@@ -40,18 +40,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function prev() {
     if (translationComplete === true) {
         translationComplete = false;
+        console.log(index);
+
         index--;
         if (index == -1) {
             index = amount - 1;
         }
-        var outerIndex = (index) % amount;
-        for (var i = 0; i < amount; i++) {
-            var slide = document.getElementsByClassName("slide")[i];
+        let outerIndex = (index) % amount;
+        for (let i = 0; i < amount; i++) {
+            let slide = document.getElementsByClassName("slide")[i];
             slide.style.opacity = '1';
             slide.style.transform = 'translateX(' + (currTransl[i] + moveOffset) + 'px)';
             currTransl[i] = currTransl[i] + moveOffset;
         }
-        var outerSlide = document.getElementsByClassName("slide")[outerIndex];
+        let outerSlide = document.getElementsByClassName("slide")[outerIndex];
         outerSlide.style.transform = 'translateX(' + (currTransl[outerIndex] - (moveOffset * amount)) + 'px)';
         outerSlide.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex] - moveOffset * (amount);
@@ -61,20 +63,20 @@ function prev() {
 function next() {
     if (translationComplete === true) {
         translationComplete = false;
-        var outerIndex = (index) % amount;
+        let outerIndex = (index) % amount;
+        console.log(index);
         index++;
-        // if (index == 1) {
-        //     index = amount + 1;
-        // }
-        for (var i = 0; i < amount; i++) {
-            var slide = document.getElementsByClassName("slide")[i];
+        for (let i = 0; i < amount; i++) {
+            let slide = document.getElementsByClassName("slide")[i];
             slide.style.opacity = '1';
             slide.style.transform = 'translateX(' + (currTransl[i] - moveOffset) + 'px)';
             currTransl[i] = currTransl[i] - moveOffset;
         }
-        var outerSlide = document.getElementsByClassName("slide")[outerIndex];
+        let outerSlide = document.getElementsByClassName("slide")[outerIndex];
         outerSlide.style.transform = 'translateX(' + (currTransl[outerIndex] + (moveOffset * amount)) + 'px)';
         outerSlide.style.opacity = '0';
         currTransl[outerIndex] = currTransl[outerIndex] + moveOffset * (amount);
     }
 }
+
+//  Carousel Section End

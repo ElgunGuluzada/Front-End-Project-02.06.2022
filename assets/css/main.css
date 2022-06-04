@@ -418,8 +418,33 @@ body main section #carousel-container {
   overflow: hidden;
 }
 
+body main section #carousel-container #controls #prev {
+  left: 3%;
+}
+
+body main section #carousel-container #controls #next {
+  right: 5%;
+}
+
+body main section #carousel-container #controls span {
+  position: absolute;
+  top: 50%;
+}
+
+body main section #carousel-container #controls span:hover {
+  opacity: 1;
+}
+
+body main section #carousel-container #controls span i {
+  background-color: #e5e5e5;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
 body main section #carousel-container > div:first-child ul {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,54 +452,37 @@ body main section #carousel-container > div:first-child ul {
   margin: 0;
 }
 
-body main section #carousel {
+body main section #carousel-container #carousel {
   position: relative;
   width: 4000px;
   padding: 0;
   margin: 0;
 }
 
-body main section #carousel img {
+body main section #carousel-container #carousel img {
   width: 100%;
-  height: 465px;
+  height: 462px;
 }
 
-body main section .animate {
-  -webkit-transition-duration: .5s;
-  transition-duration: .5s;
+body main section #carousel-container #carousel .content {
+  position: absolute;
+  left: 15%;
+  z-index: 15;
+  top: 5%;
+}
+
+body main section #carousel-container #carousel .animate {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
 
-body main section .slide {
+body main section #carousel-container #carousel .slide {
   list-style: none;
   position: relative;
   float: left;
-}
-
-body main section #controls {
-  position: absolute;
-  top: 49%;
-}
-
-body main section #controls span {
-  width: 50px;
-  cursor: pointer;
-  opacity: 0.4;
-  left: 5px;
-}
-
-body main section #controls span:hover {
-  opacity: 1;
-}
-
-body main section #prev {
-  float: left;
-}
-
-body main section #next {
-  float: right;
 }
 /*# sourceMappingURL=main.css.map */
