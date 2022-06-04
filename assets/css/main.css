@@ -415,10 +415,14 @@ body main section #carousel-container {
   margin-top: -27.5px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-body main section #carousel-container > div:first-child {
+body main section #carousel-container > div:first-child ul {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   margin: 0;
 }
@@ -428,6 +432,11 @@ body main section #carousel {
   width: 4000px;
   padding: 0;
   margin: 0;
+}
+
+body main section #carousel img {
+  width: 100%;
+  height: 465px;
 }
 
 body main section .animate {
@@ -447,13 +456,14 @@ body main section .slide {
 
 body main section #controls {
   position: absolute;
-  top: 0;
+  top: 49%;
 }
 
 body main section #controls span {
   width: 50px;
   cursor: pointer;
   opacity: 0.4;
+  left: 5px;
 }
 
 body main section #controls span:hover {

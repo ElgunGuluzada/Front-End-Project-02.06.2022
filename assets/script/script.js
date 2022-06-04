@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // prevent multiple click when transition
     for (var i = 0; i < amount; i++) {
         currTransl[i] = -moveOffset;
-        document.getElementsByClassName("slide")[i].addEventListener("transitionend", transitionCompleted, true);
+        // document.getElementsByClassName("slide")[i].addEventListener("transitionend", transitionCompleted, true);
         document.getElementsByClassName("slide")[i].addEventListener("webkitTransitionEnd", transitionCompleted, true);
         document.getElementsByClassName("slide")[i].addEventListener("oTransitionEnd", transitionCompleted, true);
         document.getElementsByClassName("slide")[i].addEventListener("MSTransitionEnd", transitionCompleted, true);
     }
     // add the last item to the start so that translateX(-moveOffset) works (In case the first click is the previous button)
-    document.getElementById('carousel').insertBefore(document.getElementById('carousel').children[4], document.getElementById('carousel').children[0])
+    document.getElementById('carousel').insertBefore(document.getElementById('carousel').children[3], document.getElementById('carousel').children[0])
     // add click events to control arrows
     document.getElementById('prev').addEventListener('click', prev, true);
     document.getElementById('next').addEventListener('click', next, true);
@@ -63,6 +63,9 @@ function next() {
         translationComplete = false;
         var outerIndex = (index) % amount;
         index++;
+        // if (index == 1) {
+        //     index = amount + 1;
+        // }
         for (var i = 0; i < amount; i++) {
             var slide = document.getElementsByClassName("slide")[i];
             slide.style.opacity = '1';
