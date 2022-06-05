@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#deadline').countdown('2022/8/12', function (event) {
 
         $('#days').html(event.strftime(''
-            + `<div>${67}</div>`
+            + `<div>${66}</div>`
         ));
         $('#hours').html(event.strftime(''
             + `<div>%H</div>`

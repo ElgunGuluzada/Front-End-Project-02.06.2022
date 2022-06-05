@@ -489,57 +489,96 @@ body main .carouselSection #carousel-container #carousel .content {
   width: 30%;
 }
 
-body main .categorySection {
-  background: #ceb8b8;
+body main .deadlineSection .categories .leftSide {
+  width: 30%;
+  height: 740px;
+  border: 2px solid red;
+  border-radius: 10px;
 }
 
-body main .deadlineSection .content h5 {
-  color: blue;
+body main .deadlineSection .categories .leftSide .content h5 {
+  color: #2372C1FF;
 }
 
-body main .deadlineSection .content div {
+body main .deadlineSection .categories .leftSide .content .name {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+body main .deadlineSection .categories .leftSide .content p img {
+  width: 100px;
+}
+
+body main .deadlineSection .categories .leftSide .content div {
   width: 20px;
 }
 
-body main .deadlineSection .content div :first-child {
+body main .deadlineSection .categories .leftSide .content div :first-child {
   font-size: 16px;
 }
 
-body main .deadlineSection .content div span {
+body main .deadlineSection .categories .leftSide .content div span {
   margin-top: 12px;
   size: 20px;
   font-weight: 600;
 }
 
-body main .deadlineSection .content .time {
+body main .deadlineSection .categories .leftSide .content .time {
   width: 100px;
   margin: 0 10px;
   padding: 15px;
   font-weight: 600;
   color: white;
-  background: red;
+  background: #ED174AFF;
   border-radius: 10px;
 }
 
-body main .weekendDiscountSection {
-  background: red;
+body main .deadlineSection .categories .rightSide {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
 }
 
-body main .carouselProductSection {
-  background: #000;
+body main .deadlineSection .categories .rightSide .product {
+  border: 0.5px solid #d6d6d6;
 }
 
-body footer .couponSection .email {
+body main .deadlineSection .categories .rightSide .product .content {
+  padding: 25px;
+}
+
+body main .deadlineSection .categories .rightSide .product .content p {
+  width: 90%;
+  margin: 0 !important;
+}
+
+body main .deadlineSection .categories .rightSide .product .content p img {
+  width: 40%;
+}
+
+body main .deadlineSection .categories .rightSide .product .content strong {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+body main .deadlineSection .categories .rightSide .product .content img {
+  width: 100%;
+}
+
+footer .couponSection .email {
   background-color: #233A95FF;
   width: 100%;
   margin: 40px 0 0 0;
 }
 
-body footer .couponSection .email .coupon {
+footer .couponSection .email .coupon {
   margin-top: 50px;
 }
 
-body footer .couponSection .email .content {
+footer .couponSection .email .content {
   margin-top: 50px;
   margin-bottom: 40px;
   width: 30%;
@@ -547,13 +586,13 @@ body footer .couponSection .email .content {
   color: white;
 }
 
-body footer .couponSection .email .content p {
+footer .couponSection .email .content p {
   width: 75%;
   margin: 5px 0;
   opacity: 0.7;
 }
 
-body footer .couponSection .email .content input {
+footer .couponSection .email .content input {
   padding: 20px 55px;
   width: 100%;
   margin: 30px 0 0 0;
@@ -561,65 +600,65 @@ body footer .couponSection .email .content input {
   outline: none;
 }
 
-body footer .couponSection .email .content button {
+footer .couponSection .email .content button {
   position: absolute;
   padding: 15px 25px;
   right: 2%;
   bottom: 10%;
 }
 
-body footer .serviceBody {
+footer .serviceBody {
   background: #F7F8FDFF;
   padding-top: 20px;
 }
 
-body footer .serviceBody .service {
+footer .serviceBody .service {
   width: 100%;
   border-bottom: 2px solid #c6c6c6;
   padding: 20px 0;
   background: #F7F8FDFF;
 }
 
-body footer .serviceBody .service h5 {
+footer .serviceBody .service h5 {
   padding: 0 0 10px 0;
   font-size: 18px !important;
 }
 
-body footer .serviceBody .service span {
+footer .serviceBody .service span {
   opacity: 0.6;
 }
 
-body footer .productsBody {
+footer .productsBody {
   background: #F7F8FDFF;
 }
 
-body footer .productsBody .products {
+footer .productsBody .products {
   padding: 6% 0;
 }
 
-body footer .productsBody .products .row ul > a {
+footer .productsBody .products .row ul > a {
   font-weight: 400;
   opacity: 1 !important;
 }
 
-body footer .productsBody .products .row ul a {
+footer .productsBody .products .row ul a {
   text-decoration: none;
   color: black;
   opacity: 0.6;
 }
 
-body footer .productsBody .products .row ul li {
+footer .productsBody .products .row ul li {
   text-decoration: none;
   list-style: none;
   margin-top: 8px;
   font-size: 13px;
 }
 
-body footer .contactBody .contact {
+footer .contactBody .contact {
   border-bottom: 1px solid grey;
 }
 
-body footer .contactBody .contact .contactNumb {
+footer .contactBody .contact .contactNumb {
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
