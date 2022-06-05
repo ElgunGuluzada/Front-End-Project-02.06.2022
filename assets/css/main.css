@@ -568,6 +568,26 @@ body main .deadlineSection .categories .rightSide .product .content img {
   width: 100%;
 }
 
+body .weekendDiscountSection .side {
+  position: relative;
+}
+
+body .weekendDiscountSection .side img {
+  width: 97%;
+  border-radius: 10px;
+}
+
+body .weekendDiscountSection .side .content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+body .weekendDiscountSection .side .content h6 {
+  color: red;
+  font-weight: 400;
+}
+
 footer .couponSection .email {
   background-color: #233A95FF;
   width: 100%;

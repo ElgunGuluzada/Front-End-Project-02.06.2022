@@ -565,10 +565,29 @@ body {
         }
       }
     }
-
   }
 
-  .weekendDiscountSection {}
+  .weekendDiscountSection {
+    .side {
+      position: relative;
+
+      img {
+        width: 97%;
+        border-radius: 10px;
+      }
+
+      .content {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+
+        h6 {
+          color: red;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 
   .carouselProductSection {}
 }
