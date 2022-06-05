@@ -529,16 +529,17 @@ body main .carouselProductSection {
   background: #000;
 }
 
-body footer .emailSection {
+body footer .couponSection .email {
   background-color: #233A95FF;
   width: 100%;
+  margin: 40px 0 0 0;
 }
 
-body footer .emailSection .coupon {
+body footer .couponSection .email .coupon {
   margin-top: 50px;
 }
 
-body footer .emailSection .content {
+body footer .couponSection .email .content {
   margin-top: 50px;
   margin-bottom: 40px;
   width: 30%;
@@ -546,13 +547,13 @@ body footer .emailSection .content {
   color: white;
 }
 
-body footer .emailSection .content p {
+body footer .couponSection .email .content p {
   width: 75%;
   margin: 5px 0;
   opacity: 0.7;
 }
 
-body footer .emailSection .content input {
+body footer .couponSection .email .content input {
   padding: 20px 55px;
   width: 100%;
   margin: 30px 0 0 0;
@@ -560,10 +561,67 @@ body footer .emailSection .content input {
   outline: none;
 }
 
-body footer .emailSection .content button {
+body footer .couponSection .email .content button {
   position: absolute;
   padding: 15px 25px;
   right: 2%;
   bottom: 10%;
+}
+
+body footer .serviceBody {
+  background: #F7F8FDFF;
+  padding-top: 20px;
+}
+
+body footer .serviceBody .service {
+  width: 100%;
+  border-bottom: 2px solid #c6c6c6;
+  padding: 20px 0;
+  background: #F7F8FDFF;
+}
+
+body footer .serviceBody .service h5 {
+  padding: 0 0 10px 0;
+  font-size: 18px !important;
+}
+
+body footer .serviceBody .service span {
+  opacity: 0.6;
+}
+
+body footer .productsBody {
+  background: #F7F8FDFF;
+}
+
+body footer .productsBody .products {
+  padding: 6% 0;
+}
+
+body footer .productsBody .products .row ul > a {
+  font-weight: 400;
+  opacity: 1 !important;
+}
+
+body footer .productsBody .products .row ul a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+body footer .productsBody .products .row ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+body footer .contactBody .contact {
+  border-bottom: 1px solid grey;
+}
+
+body footer .contactBody .contact .contactNumb {
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */

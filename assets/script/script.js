@@ -2,13 +2,13 @@ $(document).ready(function () {
     $(".location").click(function () {
         alert("salam")
     })
+
+    // deadline start
+
     $('#deadline').countdown('2022/8/12', function (event) {
 
         $('#days').html(event.strftime(''
             + `<div>${67}</div>`
-        ));
-        $('#hours').html(event.strftime(''
-            + `<div>%H</div>`
         ));
         $('#hours').html(event.strftime(''
             + `<div>%H</div>`
@@ -20,7 +20,13 @@ $(document).ready(function () {
             + `<div>%S</div>`
         ));
     });
+    // deadline end
+
 })
+
+
+
+
 //  Carousel Section Start
 
 
