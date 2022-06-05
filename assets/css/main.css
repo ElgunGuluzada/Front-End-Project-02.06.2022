@@ -9,7 +9,7 @@ body header .head-nav .covid-nav .covid {
   padding: 0 auto;
   padding: 8px 0;
   font-size: 12.5px;
-  background-color: #233A95FF;
+  background-color: #233a95ff;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
@@ -33,7 +33,7 @@ body header .head-nav .second-nav ul li a {
 }
 
 body header .head-nav .second-nav ul li a:hover {
-  color: #2BC7FBFF;
+  color: #2bc7fbff;
 }
 
 body header .head-nav .second-nav .left-second-nav {
@@ -55,7 +55,7 @@ body header .head-nav .second-nav .middle-second-nav .slash {
 }
 
 body header .head-nav .second-nav .middle-second-nav .numb {
-  color: #2BC7FBFF;
+  color: #2bc7fbff;
   font-size: 12px;
   font-weight: bold;
 }
@@ -111,7 +111,7 @@ body header .head-nav .second-nav .last-second-nav .drpdwnM a {
 }
 
 body header .head-nav .second-nav .last-second-nav .drpdwnM a:hover {
-  color: #2BC7FBFF;
+  color: #2bc7fbff;
 }
 
 body header .head-nav .third-nav {
@@ -151,7 +151,7 @@ body header .head-nav .third-nav .location .title {
 }
 
 body header .head-nav .third-nav .location .content {
-  color: #233A95FF;
+  color: #233a95ff;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -203,7 +203,7 @@ body header .head-nav .third-nav .right-third-nav .basket .price {
 body header .head-nav .third-nav .right-third-nav .basket .basketIcon {
   font-size: 30px;
   color: red;
-  background: #FFF1EEFF;
+  background: #fff1eeff;
   border-radius: 50%;
   padding: 10px;
   position: relative;
@@ -286,7 +286,7 @@ body header .main-navBar nav ul .home .HomeSubMenu li a {
 body header .main-navBar nav ul .home .HomeSubMenu li a:hover {
   padding: 5px 55px 0px 5px;
   background-color: white;
-  color: #2BC7FBFF;
+  color: #2bc7fbff;
 }
 
 body header .main-navBar nav ul .shop {
@@ -402,10 +402,10 @@ body header .main-navBar nav ul li > a:hover {
   padding: 10px 15px;
   border-radius: 30px;
   background-color: #cbeaff;
-  color: #2BC7FBFF;
+  color: #2bc7fbff;
 }
 
-body main section #carousel-container {
+body main .carouselSection #carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,24 +418,24 @@ body main section #carousel-container {
   overflow: hidden;
 }
 
-body main section #carousel-container #controls #prev {
+body main .carouselSection #carousel-container #controls #prev {
   left: 3%;
 }
 
-body main section #carousel-container #controls #next {
+body main .carouselSection #carousel-container #controls #next {
   right: 5%;
 }
 
-body main section #carousel-container #controls span {
+body main .carouselSection #carousel-container #controls span {
   position: absolute;
   top: 50%;
 }
 
-body main section #carousel-container #controls span:hover {
+body main .carouselSection #carousel-container #controls span:hover {
   opacity: 1;
 }
 
-body main section #carousel-container #controls span i {
+body main .carouselSection #carousel-container #controls span i {
   background-color: #e5e5e5;
   padding: 12px 15px;
   border-radius: 50%;
@@ -444,7 +444,7 @@ body main section #carousel-container #controls span i {
   cursor: pointer;
 }
 
-body main section #carousel-container > div:first-child ul {
+body main .carouselSection #carousel-container > div:first-child ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,20 +452,20 @@ body main section #carousel-container > div:first-child ul {
   margin: 0;
 }
 
-body main section #carousel-container #carousel {
+body main .carouselSection #carousel-container #carousel {
   position: relative;
   width: 4000px;
   padding: 0;
   margin: 0;
 }
 
-body main section #carousel-container #carousel img {
+body main .carouselSection #carousel-container #carousel img {
   width: 100%;
   height: 462px;
   cursor: pointer;
 }
 
-body main section #carousel-container #carousel .animate {
+body main .carouselSection #carousel-container #carousel .animate {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
   -webkit-transition-property: -webkit-transform;
@@ -474,18 +474,96 @@ body main section #carousel-container #carousel .animate {
   transition-property: transform, -webkit-transform;
 }
 
-body main section #carousel-container #carousel .slide {
+body main .carouselSection #carousel-container #carousel .slide {
   list-style: none;
   position: relative;
   float: left;
 }
 
-body main section #carousel-container #carousel .content {
+body main .carouselSection #carousel-container #carousel .content {
   cursor: pointer;
   position: absolute;
   left: 10%;
   z-index: 1;
   top: 10%;
   width: 30%;
+}
+
+body main .categorySection {
+  background: #ceb8b8;
+}
+
+body main .deadlineSection .content h5 {
+  color: blue;
+}
+
+body main .deadlineSection .content div {
+  width: 20px;
+}
+
+body main .deadlineSection .content div :first-child {
+  font-size: 16px;
+}
+
+body main .deadlineSection .content div span {
+  margin-top: 12px;
+  size: 20px;
+  font-weight: 600;
+}
+
+body main .deadlineSection .content .time {
+  width: 100px;
+  margin: 0 10px;
+  padding: 15px;
+  font-weight: 600;
+  color: white;
+  background: red;
+  border-radius: 10px;
+}
+
+body main .weekendDiscountSection {
+  background: red;
+}
+
+body main .carouselProductSection {
+  background: #000;
+}
+
+body footer .emailSection {
+  background-color: #233A95FF;
+  width: 100%;
+}
+
+body footer .emailSection .coupon {
+  margin-top: 50px;
+}
+
+body footer .emailSection .content {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 30%;
+  position: relative;
+  color: white;
+}
+
+body footer .emailSection .content p {
+  width: 75%;
+  margin: 5px 0;
+  opacity: 0.7;
+}
+
+body footer .emailSection .content input {
+  padding: 20px 55px;
+  width: 100%;
+  margin: 30px 0 0 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+body footer .emailSection .content button {
+  position: absolute;
+  padding: 15px 25px;
+  right: 2%;
+  bottom: 10%;
 }
 /*# sourceMappingURL=main.css.map */

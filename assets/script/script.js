@@ -2,6 +2,24 @@ $(document).ready(function () {
     $(".location").click(function () {
         alert("salam")
     })
+    $('#deadline').countdown('2022/8/12', function (event) {
+
+        $('#days').html(event.strftime(''
+            + `<div>${67}</div>`
+        ));
+        $('#hours').html(event.strftime(''
+            + `<div>%H</div>`
+        ));
+        $('#hours').html(event.strftime(''
+            + `<div>%H</div>`
+        ));
+        $('#minutes').html(event.strftime(''
+            + `<div>%M</div>`
+        ));
+        $('#sec').html(event.strftime(''
+            + `<div>%S</div>`
+        ));
+    });
 })
 //  Carousel Section Start
 
