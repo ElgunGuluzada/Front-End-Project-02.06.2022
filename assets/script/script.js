@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementsByClassName("slide")[i].addEventListener("MSTransitionEnd", transitionCompleted, true);
     }
     // add the last item to the start so that translateX(-moveOffset) works (In case the first click is the previous button)
-    document.getElementById('carousel').insertBefore(document.getElementById('carousel').children[3], document.getElementById('carousel').children[0])
+    document.getElementById('carousel').insertBefore(document.getElementById('carousel').children[amount - 1], document.getElementById('carousel').children[0])
     // add click events to control arrows
     document.getElementById('prev').addEventListener('click', prev, true);
     document.getElementById('next').addEventListener('click', next, true);
