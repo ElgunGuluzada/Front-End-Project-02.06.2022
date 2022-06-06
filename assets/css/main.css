@@ -638,6 +638,90 @@ body .carouselProductSection .product .content button {
   background-color: #FFCD00FF;
 }
 
+body .extraPercent {
+  background-color: #FBEACFFF;
+}
+
+body .extraPercent :first-child :first-child {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .extraPercent :first-child :first-child h2 {
+  padding: 15px 0;
+}
+
+body .extraProductSection > div {
+  margin-left: 11%;
+}
+
+body .extraProductSection > div .product {
+  border: 0.5px solid #d6d6d6;
+  width: 20%;
+}
+
+body .extraProductSection > div .product .content {
+  padding: 20px;
+}
+
+body .extraProductSection > div .product .content a {
+  font-size: 15px;
+  width: 120%;
+  margin: 0 !important;
+  text-decoration: none;
+  color: black;
+}
+
+body .extraProductSection > div .product .content p img {
+  margin-left: -5px;
+  width: 60%;
+}
+
+body .extraProductSection > div .product .content strong {
+  padding: 8px 0;
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+body .extraProductSection > div .product .content img {
+  width: 100%;
+}
+
+body .lastSectionBody .lastSection {
+  margin-left: 10.5%;
+}
+
+body .lastSectionBody .lastSection .product {
+  position: relative;
+  margin-top: 40px;
+}
+
+body .lastSectionBody .lastSection .product img {
+  width: 97%;
+  border-radius: 10px;
+}
+
+body .lastSectionBody .lastSection .product .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 45px;
+}
+
+body .lastSectionBody .lastSection .product .content h6 {
+  color: green;
+}
+
+body .lastSectionBody .lastSection .product .content button {
+  color: white;
+  background-color: #C2C2D3FF;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
 footer .couponSection .email {
   background-color: #233A95FF;
   width: 100%;
@@ -734,13 +818,6 @@ footer .contactBody .contact .contactNumb {
       flex-wrap: wrap;
 }
 
-.cntnr {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @media (min-width: 768px) {
   .cntnr {
     width: 750px;
@@ -766,6 +843,13 @@ footer .contactBody .contact .contactNumb {
   #featurecntnr .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
+}
+
+.cntnr {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #featurecntnr .carousel-inner .carousel-item.active,
@@ -801,6 +885,7 @@ footer .contactBody .contact .contactNumb {
 @media (max-width: 767px) {
   #featurecntnr .card img {
     width: 100%;
+    height: 75vh;
   }
 }
 
@@ -838,14 +923,14 @@ footer .contactBody .contact .contactNumb {
 #featurecntnr .indicator:hover {
   background-color: blue;
   border: 1px solid blue;
-  -webkit-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 #featurecntnr .indicator:hover {
   color: white;
-  -webkit-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 #featurecntnr .indicator {
