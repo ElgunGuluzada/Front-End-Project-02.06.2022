@@ -21,7 +21,7 @@ body {
       }
 
       .second-nav {
-        border-bottom: 0.2px solid rgb(205, 205, 205);
+        border-bottom: 1px solid rgb(205, 205, 205);
 
         ul {
           border: none;
@@ -217,11 +217,14 @@ body {
     }
 
     .main-navBar {
+      border-bottom: 1px solid;
+
       button {
         border-radius: 20px;
         padding: 10px 35px 10px 25px;
         color: white;
         font-weight: 600;
+        width: 100%;
       }
 
       nav {
@@ -592,7 +595,7 @@ body {
   .carouselProductSection {
 
     >div {
-      margin-left: 11%;
+      margin-left: 10.5%;
     }
 
     .product {
@@ -849,6 +852,31 @@ footer {
 
   .copyrightBody {
     .copyright {}
+  }
+}
+
+
+
+
+// My-accaunt page
+
+.formSection {
+  margin-top: 20px;
+  h5 {
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+
+  input {
+    outline: none !important;
+    background-color: #F3F4F7FF;
+    border: none;
+
+    &:focus {
+      outline: none !important;
+      outline: none;
+
+    }
   }
 }
 

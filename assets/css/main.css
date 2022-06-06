@@ -16,7 +16,7 @@ body header .head-nav .covid-nav .covid {
 }
 
 body header .head-nav .second-nav {
-  border-bottom: 0.2px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 body header .head-nav .second-nav ul {
@@ -220,11 +220,16 @@ body header .head-nav .third-nav .right-third-nav .basket .basketIcon .count {
   top: -2px;
 }
 
+body header .main-navBar {
+  border-bottom: 1px solid;
+}
+
 body header .main-navBar button {
   border-radius: 20px;
   padding: 10px 35px 10px 25px;
   color: white;
   font-weight: 600;
+  width: 100%;
 }
 
 body header .main-navBar nav {
@@ -589,7 +594,7 @@ body .weekendDiscountSection .side .content h6 {
 }
 
 body .carouselProductSection > div {
-  margin-left: 11%;
+  margin-left: 10.5%;
 }
 
 body .carouselProductSection .product {
@@ -816,6 +821,26 @@ footer .contactBody .contact .contactNumb {
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.formSection {
+  margin-top: 20px;
+}
+
+.formSection h5 {
+  margin-top: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.formSection input {
+  outline: none !important;
+  background-color: #F3F4F7FF;
+  border: none;
+}
+
+.formSection input:focus {
+  outline: none !important;
+  outline: none;
 }
 
 @media (min-width: 768px) {
