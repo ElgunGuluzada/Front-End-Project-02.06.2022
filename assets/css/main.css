@@ -494,41 +494,41 @@ body main .carouselSection #carousel-container #carousel .content {
   width: 30%;
 }
 
-body main .deadlineSection .categories .leftSide {
+body main .deadlineSection #deadline .categories .leftSide {
   width: 30%;
   height: 740px;
   border: 2px solid red;
   border-radius: 10px;
 }
 
-body main .deadlineSection .categories .leftSide .content h5 {
+body main .deadlineSection #deadline .categories .leftSide .content h5 {
   color: #2372C1FF;
 }
 
-body main .deadlineSection .categories .leftSide .content .name {
+body main .deadlineSection #deadline .categories .leftSide .content .name {
   font-size: 20px;
   margin: 5px 0;
 }
 
-body main .deadlineSection .categories .leftSide .content p img {
+body main .deadlineSection #deadline .categories .leftSide .content p img {
   width: 100px;
 }
 
-body main .deadlineSection .categories .leftSide .content div {
+body main .deadlineSection #deadline .categories .leftSide .content div {
   width: 20px;
 }
 
-body main .deadlineSection .categories .leftSide .content div :first-child {
+body main .deadlineSection #deadline .categories .leftSide .content div :first-child {
   font-size: 16px;
 }
 
-body main .deadlineSection .categories .leftSide .content div span {
+body main .deadlineSection #deadline .categories .leftSide .content div span {
   margin-top: 12px;
   size: 20px;
   font-weight: 600;
 }
 
-body main .deadlineSection .categories .leftSide .content .time {
+body main .deadlineSection #deadline .categories .leftSide .content .time {
   width: 100px;
   margin: 0 10px;
   padding: 15px;
@@ -538,7 +538,7 @@ body main .deadlineSection .categories .leftSide .content .time {
   border-radius: 10px;
 }
 
-body main .deadlineSection .categories .rightSide {
+body main .deadlineSection #deadline .categories .rightSide {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 30px;
@@ -546,30 +546,30 @@ body main .deadlineSection .categories .rightSide {
   border-radius: 10px;
 }
 
-body main .deadlineSection .categories .rightSide .product {
+body main .deadlineSection #deadline .categories .rightSide .product {
   border: 0.5px solid #d6d6d6;
 }
 
-body main .deadlineSection .categories .rightSide .product .content {
+body main .deadlineSection #deadline .categories .rightSide .product .content {
   padding: 25px;
 }
 
-body main .deadlineSection .categories .rightSide .product .content p {
+body main .deadlineSection #deadline .categories .rightSide .product .content p {
   width: 90%;
   margin: 0 !important;
 }
 
-body main .deadlineSection .categories .rightSide .product .content p img {
+body main .deadlineSection #deadline .categories .rightSide .product .content p img {
   width: 40%;
 }
 
-body main .deadlineSection .categories .rightSide .product .content strong {
+body main .deadlineSection #deadline .categories .rightSide .product .content strong {
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
-body main .deadlineSection .categories .rightSide .product .content img {
+body main .deadlineSection #deadline .categories .rightSide .product .content img {
   width: 100%;
 }
 
@@ -910,7 +910,6 @@ footer .contactBody .contact .contactNumb {
 @media (max-width: 767px) {
   #featurecntnr .card img {
     width: 100%;
-    height: 75vh;
   }
 }
 
@@ -930,8 +929,6 @@ footer .contactBody .contact .contactNumb {
 
 #featurecntnr .card .card-img-overlays {
   position: absolute;
-  bottom: 15%;
-  left: 10%;
   color: #fff;
   font-weight: bolder;
 }
@@ -942,6 +939,10 @@ footer .contactBody .contact .contactNumb {
 
 #featurecntnr .indicator {
   border: 1px solid #cacaca;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 20px;
+  top: 45%;
   padding: 3px 6px 3px 6px;
 }
 

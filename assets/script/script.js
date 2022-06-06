@@ -7,9 +7,9 @@ $(document).ready(function () {
 
     $('#deadline').countdown('2022/8/12', function (event) {
 
-        $('#days').html(event.strftime(''
-            + `<div>${66}</div>`
-        ));
+        // $('#days').html(event.strftime(''
+        //     + `<div>${66}</div>`
+        // ));
         $('#hours').html(event.strftime(''
             + `<div>%H</div>`
         ));
@@ -20,6 +20,49 @@ $(document).ready(function () {
             + `<div>%S</div>`
         ));
     });
+
+    (function () {
+        let second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        //I'm adding this section so I don't have to keep updating this pen every year :-)
+        //remove this if you don't need it
+        let today = new Date(),
+            dd = String(today.getDate()).padStart(2, "0"),
+            mm = String(today.getMonth() + 1).padStart(2, "0"),
+            yyyy = today.getFullYear(),
+            nextYear = yyyy,
+            dayMonth = "08/12/",
+            deadline = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > deadline) {
+            deadline = dayMonth + nextYear;
+        }
+        //end
+
+        let countDown = new Date(deadline).getTime(),
+            x = setInterval(function () {
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day));
+                    // document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    // document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    // document.getElementById("sec").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    clearInterval(x);
+                }
+                //seconds
+            }, 0)
+    }());
+
+
     // deadline end
 
 })
@@ -63,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function prev() {
     if (translationComplete === true) {
         translationComplete = false;
-        console.log(index);
 
         index--;
         if (index == -1) {
@@ -87,7 +129,6 @@ function next() {
     if (translationComplete === true) {
         translationComplete = false;
         let outerIndex = (index) % amount;
-        console.log(index);
         index++;
         for (let i = 0; i < amount; i++) {
             let slide = document.getElementsByClassName("slide")[i];
@@ -106,8 +147,6 @@ function next() {
 
 
 // product carousel start 
-
-
 let items = document.querySelectorAll('#featurecntnr .carousel .carousel-item');
 items.forEach((el) => {
     const minPerSlide = 5
@@ -151,3 +190,4 @@ try {
 } catch (error) {
     console.log(error);
 }
+// product carousel end
