@@ -573,40 +573,40 @@ body main .deadlineSection #deadline .categories .rightSide .product .content im
   width: 100%;
 }
 
-body .weekendDiscountSection .side {
+body main .weekendDiscountSection .side {
   position: relative;
 }
 
-body .weekendDiscountSection .side img {
+body main .weekendDiscountSection .side img {
   width: 97%;
   border-radius: 10px;
 }
 
-body .weekendDiscountSection .side .content {
+body main .weekendDiscountSection .side .content {
   position: absolute;
   top: 15%;
   left: 5%;
 }
 
-body .weekendDiscountSection .side .content h6 {
+body main .weekendDiscountSection .side .content h6 {
   color: red;
   font-weight: 400;
 }
 
-body .carouselProductSection > div {
+body main .carouselProductSection > div {
   margin-left: 10.5%;
 }
 
-body .carouselProductSection .product {
+body main .carouselProductSection .product {
   border: 0.5px solid #d6d6d6;
   width: 20%;
 }
 
-body .carouselProductSection .product .content {
+body main .carouselProductSection .product .content {
   padding: 20px;
 }
 
-body .carouselProductSection .product .content a {
+body main .carouselProductSection .product .content a {
   font-size: 15px;
   width: 120%;
   margin: 0 !important;
@@ -614,12 +614,12 @@ body .carouselProductSection .product .content a {
   color: black;
 }
 
-body .carouselProductSection .product .content p img {
+body main .carouselProductSection .product .content p img {
   margin-left: -5px;
   width: 60%;
 }
 
-body .carouselProductSection .product .content strong {
+body main .carouselProductSection .product .content strong {
   padding: 8px 0;
   display: block;
   font-size: 10px;
@@ -627,11 +627,11 @@ body .carouselProductSection .product .content strong {
   color: #2FC573FF;
 }
 
-body .carouselProductSection .product .content img {
+body main .carouselProductSection .product .content img {
   width: 100%;
 }
 
-body .carouselProductSection .product .content button {
+body main .carouselProductSection .product .content button {
   font-size: 12px;
   font-weight: 600;
   padding: 5px 30px;
@@ -643,33 +643,33 @@ body .carouselProductSection .product .content button {
   background-color: #FFCD00FF;
 }
 
-body .extraPercent {
+body main .extraPercent {
   background-color: #FBEACFFF;
 }
 
-body .extraPercent :first-child :first-child {
+body main .extraPercent :first-child :first-child {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-body .extraPercent :first-child :first-child h2 {
+body main .extraPercent :first-child :first-child h2 {
   padding: 15px 0;
 }
 
-body .extraProductSection > div {
+body main .extraProductSection > div {
   margin-left: 11%;
 }
 
-body .extraProductSection > div .product {
+body main .extraProductSection > div .product {
   border: 0.5px solid #d6d6d6;
   width: 20%;
 }
 
-body .extraProductSection > div .product .content {
+body main .extraProductSection > div .product .content {
   padding: 20px;
 }
 
-body .extraProductSection > div .product .content a {
+body main .extraProductSection > div .product .content a {
   font-size: 15px;
   width: 120%;
   margin: 0 !important;
@@ -677,12 +677,12 @@ body .extraProductSection > div .product .content a {
   color: black;
 }
 
-body .extraProductSection > div .product .content p img {
+body main .extraProductSection > div .product .content p img {
   margin-left: -5px;
   width: 60%;
 }
 
-body .extraProductSection > div .product .content strong {
+body main .extraProductSection > div .product .content strong {
   padding: 8px 0;
   display: block;
   font-size: 10px;
@@ -690,36 +690,36 @@ body .extraProductSection > div .product .content strong {
   color: #2FC573FF;
 }
 
-body .extraProductSection > div .product .content img {
+body main .extraProductSection > div .product .content img {
   width: 100%;
 }
 
-body .lastSectionBody .lastSection {
+body main .lastSectionBody .lastSection {
   margin-left: 10.5%;
 }
 
-body .lastSectionBody .lastSection .product {
+body main .lastSectionBody .lastSection .product {
   position: relative;
   margin-top: 40px;
 }
 
-body .lastSectionBody .lastSection .product img {
+body main .lastSectionBody .lastSection .product img {
   width: 97%;
   border-radius: 10px;
 }
 
-body .lastSectionBody .lastSection .product .content {
+body main .lastSectionBody .lastSection .product .content {
   position: absolute;
   top: 0;
   left: 0;
   padding: 35px 45px;
 }
 
-body .lastSectionBody .lastSection .product .content h6 {
+body main .lastSectionBody .lastSection .product .content h6 {
   color: green;
 }
 
-body .lastSectionBody .lastSection .product .content button {
+body main .lastSectionBody .lastSection .product .content button {
   color: white;
   background-color: #C2C2D3FF;
   border: none;
@@ -823,24 +823,110 @@ footer .contactBody .contact .contactNumb {
       flex-wrap: wrap;
 }
 
-.formSection {
+.accaunt {
   margin-top: 20px;
 }
 
-.formSection h5 {
+.accaunt h5 {
   margin-top: 20px;
   border-bottom: 1px solid lightgray;
 }
 
-.formSection input {
+.accaunt input {
   outline: none !important;
   background-color: #F3F4F7FF;
   border: none;
 }
 
-.formSection input:focus {
+.accaunt input:focus {
   outline: none !important;
   outline: none;
+}
+
+.contact .head {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.contact .address {
+  margin-left: 5%;
+}
+
+.contact .address .content .street {
+  padding: 35px 35px;
+  background: #F3F3F6FF;
+  text-align: center;
+}
+
+.contact .address .content .street i {
+  font-size: 40px;
+  color: #233A95FF;
+}
+
+.contact .address .content .street h6 {
+  margin-top: 25px;
+}
+
+.contact .address .content .street p {
+  font-size: 14px;
+}
+
+.sendUs {
+  margin: 5% 0 8%;
+}
+
+.sendUs .form {
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 6%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 12px 5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 12px 5px;
+  padding: 3% 14%;
+}
+
+.sendUs .form .head {
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 5% 0;
+}
+
+.sendUs .form form {
+  padding: 3% 0 5%;
+}
+
+.sendUs .form form input {
+  background: #F3F4F7FF;
+  border: none;
+  outline: none !important;
+  outline-style: none !important;
+  height: 35px;
+  padding: 0 20px;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.sendUs .form form textarea {
+  background: #F3F4F7FF;
+  border: none;
+  outline: none !important;
+  outline-style: none !important;
+  padding: 10px 20px;
+  margin: 5px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sendUs .form form button {
+  background-color: #233A95FF;
+  padding: 10px 30px !important;
+}
+
+.sendUs .form form .accaunt div {
+  width: 48%;
+}
+
+.sendUs .form form .accaunt .right {
+  margin-left: 4%;
 }
 
 @media (min-width: 768px) {

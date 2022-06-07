@@ -5,7 +5,6 @@
 }
 
 body {
-
   header {
     .head-nav {
       .covid-nav {
@@ -571,104 +570,34 @@ body {
       }
 
     }
-  }
 
-  .weekendDiscountSection {
-    .side {
-      position: relative;
-
-      img {
-        width: 97%;
-        border-radius: 10px;
-      }
-
-      .content {
-        position: absolute;
-        top: 15%;
-        left: 5%;
-
-        h6 {
-          color: red;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-  .carouselProductSection {
-
-    >div {
-      margin-left: 10.5%;
-    }
-
-    .product {
-      border: 0.5px solid rgb(214, 214, 214);
-      width: 20%;
-
-      .content {
-        padding: 20px;
-
-        a {
-          font-size: 15px;
-          width: 120%;
-          margin: 0 !important;
-          text-decoration: none;
-          color: black;
-        }
-
-        p {
-          img {
-            margin-left: -5px;
-            width: 60%;
-          }
-        }
-
-        strong {
-          padding: 8px 0;
-          display: block;
-          font-size: 10px;
-          font-weight: 700;
-          color: #2FC573FF;
-        }
+    .weekendDiscountSection {
+      .side {
+        position: relative;
 
         img {
-          width: 100%;
+          width: 97%;
+          border-radius: 10px;
         }
 
-        button {
-          font-size: 12px;
-          font-weight: 600;
-          padding: 5px 30px;
-          margin: 7px 0;
-          width: 100%;
-          border-radius: 20px;
-          outline: none;
-          border: none;
-          background-color: #FFCD00FF;
-        }
-      }
-    }
-  }
+        .content {
+          position: absolute;
+          top: 15%;
+          left: 5%;
 
-  .extraPercent {
-    background-color: #FBEACFFF;
-
-    :first-child {
-      :first-child {
-        justify-content: space-around;
-
-        h2 {
-          padding: 15px 0;
+          h6 {
+            color: red;
+            font-weight: 400;
+          }
         }
       }
     }
 
+    .carouselProductSection {
 
-  }
-
-  .extraProductSection {
-    >div {
-      margin-left: 11%;
+      >div {
+        margin-left: 10.5%;
+      }
 
       .product {
         border: 0.5px solid rgb(214, 214, 214);
@@ -703,44 +632,114 @@ body {
           img {
             width: 100%;
           }
+
+          button {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 30px;
+            margin: 7px 0;
+            width: 100%;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background-color: #FFCD00FF;
+          }
         }
       }
     }
-  }
 
-  .lastSectionBody {
-    .lastSection {
-      margin-left: 10.5%;
+    .extraPercent {
+      background-color: #FBEACFFF;
 
-      .product {
-        position: relative;
-        margin-top: 40px;
+      :first-child {
+        :first-child {
+          justify-content: space-around;
 
-        img {
-          width: 97%;
-          border-radius: 10px;
+          h2 {
+            padding: 15px 0;
+          }
         }
+      }
 
-        .content {
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding: 35px 45px;
 
-          h6 {
-            color: green;
+    }
+
+    .extraProductSection {
+      >div {
+        margin-left: 11%;
+
+        .product {
+          border: 0.5px solid rgb(214, 214, 214);
+          width: 20%;
+
+          .content {
+            padding: 20px;
+
+            a {
+              font-size: 15px;
+              width: 120%;
+              margin: 0 !important;
+              text-decoration: none;
+              color: black;
+            }
+
+            p {
+              img {
+                margin-left: -5px;
+                width: 60%;
+              }
+            }
+
+            strong {
+              padding: 8px 0;
+              display: block;
+              font-size: 10px;
+              font-weight: 700;
+              color: #2FC573FF;
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .lastSectionBody {
+      .lastSection {
+        margin-left: 10.5%;
+
+        .product {
+          position: relative;
+          margin-top: 40px;
+
+          img {
+            width: 97%;
+            border-radius: 10px;
           }
 
-          h3 {}
+          .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 35px 45px;
 
-          p {}
+            h6 {
+              color: green;
+            }
 
-          button {
-            color: white;
-            background-color: #C2C2D3FF;
-            border: none;
-            outline: none;
-            border-radius: 30px;
+            h3 {}
+
+            p {}
+
+            button {
+              color: white;
+              background-color: #C2C2D3FF;
+              border: none;
+              outline: none;
+              border-radius: 30px;
+            }
           }
         }
       }
@@ -858,12 +857,9 @@ footer {
   }
 }
 
-
-
-
 // My-accaunt page
 
-.formSection {
+.accaunt {
   margin-top: 20px;
 
   h5 {
@@ -881,6 +877,104 @@ footer {
       outline: none;
 
     }
+  }
+}
+
+// My-accaunt end
+
+
+//Contact page
+.contact {
+  .head {
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .address {
+    margin-left: 5%;
+
+    .content {
+      .street {
+        padding: 35px 35px;
+        background: #F3F3F6FF;
+        text-align: center;
+
+        i {
+          font-size: 40px;
+          color: #233A95FF;
+        }
+
+        h6 {
+          margin-top: 25px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.sendUs {
+  margin: 5% 0 8%;
+
+  .form {
+    border-radius: 15px;
+
+    width: 90%;
+    margin-left: 6%;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 12px 5px;
+    padding: 3% 14%;
+
+    .head {
+      text-align: center;
+      border-bottom: 1px solid;
+      padding: 5% 0;
+    }
+
+    form {
+      padding: 3% 0 5%;
+
+      input {
+        background: #F3F4F7FF;
+        border: none;
+        outline: none !important;
+        outline-style: none !important;
+        height: 35px;
+        padding: 0 20px;
+        border-radius: 3px;
+        margin: 5px 0;
+      }
+
+      textarea {
+        background: #F3F4F7FF;
+        border: none;
+        outline: none !important;
+        outline-style: none !important;
+        padding: 10px 20px;
+        margin: 5px 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      button {
+        background-color: #233A95FF;
+        padding: 10px 30px !important;
+      }
+
+      .accaunt {
+        div {
+          width: 48%;
+        }
+
+        .right {
+          margin-left: 4%;
+        }
+
+      }
+    }
+
   }
 }
 
@@ -904,8 +998,6 @@ footer {
   }
 }
 
-
-
 @media (max-width: 767px) {
   #featurecntnr .carousel-inner .carousel-item>div {
     display: none;
@@ -915,7 +1007,6 @@ footer {
     display: block;
   }
 }
-
 
 // hazir goturduyum scss -e cevirmedim
 

@@ -9,10 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <title>Login</title>
+    <title>contact</title>
 </head>
 
 <body>
@@ -173,63 +175,92 @@
         </div>
     </header>
 
-    <main>
-        <section class="accaunt">
-            <div class="container-fluid">
-                <div class="container">
-                    <p class=""><a href="/index.html">Home </a><span>> My Accaount</span></p>
-                    <div class=" d-flex col-11">
-                        <div class="row col-6">
-                            <form>
-                                <h5 class="py-3">LOGIN </h5>
-                                <div class="form-group">
-                                    <label class="py-2 px-1" for="exampleInputEmail1">Username or email address *</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
-
-                                </div>
-                                <div class="form-group">
-                                    <label class="py-2 px-1" for="exampleInputPassword1">Password *</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input my-3" id="exampleCheck1">
-                                    <label class="form-check-label my-3" for="exampleCheck1">Remember me</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Log in</button>
-                                <p class="my-3"> <a href="">Lost your password?</a> </p>
-                            </form>
+    <div class="container-fluid contact">
+        <div class="container">
+            <div class="row">
+                <div class="head">
+                    <h1>Get In Touch</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                        quaerat unde quam dolor culpa
+                        veritatis inventore, aut commodi eum veniam vel.</p>
+                </div>
+            </div>
+            <div class="row address col-lg-11">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="content">
+                        <div class="street">
+                            <i class="fas fa-location-dot"></i>
+                            <h6>102 Street 2714 Donovan</h6>
+                            <p>Lorem ipsum dolar site amet discont</p>
                         </div>
-                        <div class="row mx-5 col-6">
-                            <form>
-                                <h5 class="py-3">REGISTER</h5>
-                                <div class="form-group">
-                                    <label class="py-2 px-1" for="exampleInputEmail1">Email address *</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group">
-                                    <label class="py-2 px-1" for="exampleInputPassword1">Password *</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <p id="emailHelp" class="form-text text-muted my-3">Your personal data will be used
-                                    to
-                                    support your experience throughout this website, to manage access to your account,
-                                    and
-                                    for other purposes described in our <span><a href=""> privacy
-                                        policy.</a></span></p>
-                                <p>
-                                    <button type="submit" class="btn btn-primary">Resgister</button>
-                                </p>
-                            </form>
-                        </div>
+                        <div class="phone"></div>
+                        <div class="email"></div>
                     </div>
                 </div>
 
-            </div>
-        </section>
-    </main>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="content">
+                        <div class="street">
+                            <i class='bx bx-phone-call'></i>
+                            <h6>+02 1234 567 88</h6>
+                            <p>Lorem ipsum dolar site amet discont</p>
+                        </div>
+                        <div class="phone"></div>
+                        <div class="email"></div>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 col-sm-12">
+                    <div class="content">
+                        <div class="street">
+                            <i class='bx bx-envelope'></i>
+                            <h6>info@example.com</h6>
+                            <p>Lorem ipsum dolar site amet discont</p>
+                        </div>
+                        <div class="phone"></div>
+                        <div class="email"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sendUs">
+        <div class="container">
+            <div class="row form col-11">
+                <div class="content">
+                    <div class="head">
+                        <h1>Send Us</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat unde quam dolor
+                            culpa
+                            veritatis inventore, aut commodi eum veniam vel.</p>
+                    </div>
+                    <form>
+                        <div class="accaunt d-flex">
+                            <div class="col-6 left">
+                                <label>Your name *</label>
+                                <input type="text" class="w-100" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="col-6 right">
+                                <label for="exampleInputEmail1">Your email *</label>
+                                <input type="email" class="w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject*</label>
+                            <input type="text" class="w-100" aria-describedby="emailHelp">
+                        </div>
+                        <label>Your message*</label>
+                        <div class="form-group">
+                            <textarea name="" dropzone="none" id="" cols="103.5" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid couponSection">
             <div class="row">
