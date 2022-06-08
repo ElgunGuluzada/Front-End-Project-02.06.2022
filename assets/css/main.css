@@ -1228,6 +1228,11 @@ footer .contactBody .contact .contactNumb {
   top: 40px;
 }
 
+.shop .shopPage .leftSide .prodFilter #slider {
+  width: 80%;
+  background: red;
+}
+
 .shop .shopPage .leftSide .prodStatus p {
   margin-bottom: -3px;
   cursor: pointer;

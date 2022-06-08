@@ -250,10 +250,10 @@
                     </div>
                     <h6>FILTER BY PRICE</h6>
                     <div class="prodFilter">
-                        <div class="progress-wrapper">
+                         <div class="progress-wrapper">
                             <!-- <div class="progress">
-                            </div> -->
-                          </div>
+                            </div>  -->
+                          </div> 
                         <datalist id="slider-list">
                             <option>0</option>
                             <option>10</option>
@@ -264,8 +264,8 @@
                             <option>60</option>
                             <option>70</option>
                         </datalist>
-                        <input type="range" id="slider" list="slider-list" class="w-100" />
-                        <p>Price: <span> $0 - $70</span></p>
+                        <input type="range" id="slider" list="slider-list" value="70" class="w-100" />
+                        <p>Price: <span> $0 - $<span id="filterPrice">70</span></span></p>
                         <strong>FILTER</strong>
                     </div>
                     <h6>PRODUCT STATUS</h6>

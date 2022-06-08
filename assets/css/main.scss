@@ -1227,7 +1227,6 @@ footer {
           font-weight: 500;
           transition: all 1s ease-in;
 
-
           input {
             position: absolute;
             left: 5%;
@@ -1254,16 +1253,12 @@ footer {
               transition: all 1s ease-in;
               margin-top: 7.5px;
 
-
               input {
                 position: absolute;
                 left: -10%;
                 top: 25%;
-
               }
-
             }
-
           }
         }
       }
@@ -1281,6 +1276,10 @@ footer {
           font-size: 14px;
           right: 0;
           top: 40px;
+        }
+        #slider{
+          width: 80%;
+          background: red;
         }
 
       }
@@ -1428,6 +1427,7 @@ footer {
 
 
 }
+
 
 
 

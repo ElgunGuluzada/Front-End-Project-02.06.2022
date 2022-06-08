@@ -21,15 +21,22 @@ $("body").on("input", "#slider", function () {
 });
 
 let direction = 1;
+let price = document.getElementById("filterPrice")
+let oldVal = parseInt($("#slider").val());
+let newVal = oldVal + (10 * direction);
+price.innerText = newVal;
 
 setInterval(function () {
     let oldVal = parseInt($("#slider").val());
+
     if (oldVal === 70) {
         direction = -1;
     } else if (oldVal === 0) {
         direction = 1;
     }
     let newVal = oldVal + (10 * direction);
+    price.innerText = newVal;
+
     $("#slider").val(newVal);
-    $("#slider").trigger("input");
-}, 100000);
+    // $("#slider").trigger("input");
+}, 1000);
