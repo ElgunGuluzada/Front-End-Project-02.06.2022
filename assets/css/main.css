@@ -1163,19 +1163,106 @@ footer .contactBody .contact .contactNumb {
   margin: 50px 0 5px;
 }
 
-.shop .shopPage .leftSide ul {
-  font-size: 13px;
-  margin-top: -10px;
+.shop .shopPage .leftSide .prodCategories {
+  overflow-y: scroll;
+  max-height: 260px;
 }
 
-.shop .shopPage .leftSide ul li {
+.shop .shopPage .leftSide .prodCategories ul {
+  font-size: 13px;
+  margin-top: -10px;
+  position: relative;
+  font-weight: 500;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.shop .shopPage .leftSide .prodCategories ul input {
+  position: absolute;
+  left: 5%;
+  top: 4px;
+}
+
+.shop .shopPage .leftSide .prodCategories ul span {
+  cursor: pointer;
+  position: absolute;
+  right: 8%;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  background: none;
+}
+
+.shop .shopPage .leftSide .prodCategories ul .li {
   list-style: none;
+  display: none;
   margin-left: 20px;
+}
+
+.shop .shopPage .leftSide .prodCategories ul .li li {
+  position: relative;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  margin-top: 7.5px;
+}
+
+.shop .shopPage .leftSide .prodCategories ul .li li input {
+  position: absolute;
+  left: -10%;
+  top: 25%;
+}
+
+.shop .shopPage .leftSide .prodFilter {
+  position: relative;
+}
+
+.shop .shopPage .leftSide .prodFilter p {
+  margin-top: 15px;
+}
+
+.shop .shopPage .leftSide .prodFilter strong {
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  right: 0;
+  top: 40px;
+}
+
+.shop .shopPage .leftSide .prodStatus p {
+  margin-bottom: -3px;
+  cursor: pointer;
+}
+
+.shop .shopPage .leftSide .prodStatus p:hover input {
+  background-color: #e9e4e4;
+}
+
+.shop .shopPage .leftSide .prodStatus p input {
+  margin-right: 10px;
+  cursor: pointer;
+  background: #000;
+}
+
+.shop .shopPage .leftSide .brands {
+  position: relative;
+}
+
+.shop .shopPage .leftSide .brands p {
+  margin-bottom: -1px;
+}
+
+.shop .shopPage .leftSide .brands input {
+  margin-right: 8px;
+}
+
+.shop .shopPage .leftSide .brands span {
+  position: absolute;
+  right: 0%;
 }
 
 .shop .shopPage .rightSide {
   margin: 50px 0 0px;
-  margin-left: -10%;
+  margin-left: -5%;
 }
 
 .shop .shopPage .rightSide .sortList {

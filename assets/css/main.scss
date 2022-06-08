@@ -1216,21 +1216,115 @@ footer {
         margin: 50px 0 5px;
       }
 
-      ul {
-        font-size: 13px;
-        margin-top: -10px;
+      .prodCategories {
+        overflow-y: scroll;
+        max-height: 260px;
 
-        li {
-          list-style: none;
-          // display: none;
-          margin-left: 20px;
+        ul {
+          font-size: 13px;
+          margin-top: -10px;
+          position: relative;
+          font-weight: 500;
+          transition: all 1s ease-in;
+
+
+          input {
+            position: absolute;
+            left: 5%;
+            top: 4px;
+          }
+
+          span {
+            cursor: pointer;
+            position: absolute;
+            right: 8%;
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            background: none;
+          }
+
+          .li {
+            list-style: none;
+            display: none;
+            margin-left: 20px;
+
+            li {
+              position: relative;
+              transition: all 1s ease-in;
+              margin-top: 7.5px;
+
+
+              input {
+                position: absolute;
+                left: -10%;
+                top: 25%;
+
+              }
+
+            }
+
+          }
+        }
+      }
+
+      .prodFilter {
+        position: relative;
+
+        p {
+          margin-top: 15px;
+        }
+
+        strong {
+          position: absolute;
+          font-weight: 600;
+          font-size: 14px;
+          right: 0;
+          top: 40px;
+        }
+
+      }
+
+      .prodStatus {
+        p {
+          margin-bottom: -3px;
+          cursor: pointer;
+
+          &:hover {
+            input {
+              background-color: rgb(233, 228, 228);
+            }
+          }
+
+          input {
+            margin-right: 10px;
+            cursor: pointer;
+            background: #000;
+          }
+        }
+      }
+
+      .brands {
+        position: relative;
+
+        p {
+          margin-bottom: -1px;
+        }
+
+        input {
+          margin-right: 8px;
+        }
+
+        span {
+          position: absolute;
+          right: 0%;
         }
       }
     }
 
     .rightSide {
       margin: 50px 0 0px;
-      margin-left: -10%;
+      margin-left: -5%;
 
       .sortList {
         padding: 10px 20px;
@@ -1332,7 +1426,10 @@ footer {
     }
   }
 
+
 }
+
+
 
 
 
