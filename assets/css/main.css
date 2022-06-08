@@ -1155,6 +1155,128 @@ footer .contactBody .contact .contactNumb {
   border: 1px solid #e7e6e6;
 }
 
+.shop .shopPage {
+  margin-left: 5%;
+}
+
+.shop .shopPage .leftSide h6 {
+  margin: 50px 0 5px;
+}
+
+.shop .shopPage .leftSide ul {
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+.shop .shopPage .leftSide ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.shop .shopPage .rightSide {
+  margin: 50px 0 0px;
+  margin-left: -10%;
+}
+
+.shop .shopPage .rightSide .sortList {
+  padding: 10px 20px;
+  background: #F7F8FDFF;
+  margin: 15px 0;
+}
+
+.shop .shopPage .rightSide .product {
+  border: 0.5px solid #d6d6d6;
+}
+
+.shop .shopPage .rightSide .product .content {
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.shop .shopPage .rightSide .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  width: 12.5%;
+  z-index: 5;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+          box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+}
+
+.shop .shopPage .rightSide .product .content:hover .minimize {
+  right: 8.5%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.shop .shopPage .rightSide .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.shop .shopPage .rightSide .product .content:hover button {
+  display: block;
+}
+
+.shop .shopPage .rightSide .product .content .description {
+  font-size: 12px;
+}
+
+.shop .shopPage .rightSide .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
+}
+
+.shop .shopPage .rightSide .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+.shop .shopPage .rightSide .product .content .heart {
+  top: 20%;
+  right: 2%;
+}
+
+.shop .shopPage .rightSide .product .content p {
+  width: 90%;
+  margin: 0 !important;
+}
+
+.shop .shopPage .rightSide .product .content p img {
+  width: 60%;
+}
+
+.shop .shopPage .rightSide .product .content strong {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+.shop .shopPage .rightSide .product .content img {
+  width: 100%;
+}
+
+.shop .shopPage .rightSide .product .content button {
+  display: none;
+  padding: 5px 30px;
+  font-size: 12px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   .cntnr {
     width: 750px;

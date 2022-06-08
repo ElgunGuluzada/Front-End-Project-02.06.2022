@@ -7,6 +7,23 @@ $(document).ready(function () {
 
     // deadline start
 
+
+    //wishlist
+    let heartIcon = document.querySelectorAll(".heart")
+    heartIcon.forEach(heart => {
+        heart.onclick = function () {
+            if (this.classList.contains("bxs-heart")) {
+                this.classList.remove("bxs-heart")
+                this.classList.add("bx-heart")
+            }
+            else {
+                this.classList.remove("bx-heart")
+                this.classList.add("bxs-heart")
+            }
+        }
+    })
+
+    //wishlist end
     $('#deadline').countdown('2022/8/12', function (event) {
 
         // $('#days').html(event.strftime(''
