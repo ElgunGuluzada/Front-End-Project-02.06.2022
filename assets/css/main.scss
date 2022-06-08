@@ -1277,7 +1277,8 @@ footer {
           right: 0;
           top: 40px;
         }
-        #slider{
+
+        #slider {
           width: 80%;
           background: red;
         }
@@ -1428,7 +1429,54 @@ footer {
 
 }
 
+//product
 
+.productBody {
+  position: relative;
+  background-color: #F7F8FDFF;
+
+  .firstSection {
+    margin: 0 13%;
+    background-color: white;
+    padding: 40px;
+
+    .leftPart {
+      background: blue;
+      position: relative;
+
+      .carousel-indicators {
+        .btns {
+          position: absolute;
+          bottom: 110px;
+          left: 42px;
+
+          img {
+            background: transparent;
+          }
+        }
+      }
+
+      .carousel-inner {
+        width: 120%;
+
+        img {
+          width: 140%;
+          margin: -30px;
+          padding: 20px 50px;
+        }
+      }
+    }
+
+    .middlePart {
+      margin-left: 10%;
+      background: red;
+    }
+
+    .rightPart {
+      background: green;
+    }
+  }
+}
 
 
 
