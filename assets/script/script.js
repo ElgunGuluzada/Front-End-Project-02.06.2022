@@ -3,8 +3,6 @@ $(document).ready(function () {
         alert("salam")
     })
 
-
-
     // deadline start
 
 
@@ -210,3 +208,75 @@ try {
 }
 // product carousel end
 
+
+
+// basket section start
+
+let btnAdd = document.querySelectorAll(".btn-add");
+let productCount = document.getElementById("product-count");
+let totalPrice = document.getElementById("totalPrice")
+let sumTotalPrice = 0;
+
+
+// if (localStorage.getItem("basket") != null) {
+//     let arr = JSON.parse(localStorage.getItem("basket"));
+//     arr.forEach(product => {
+btnAdd.forEach(btn => {
+    btn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        if (localStorage.getItem("basket") == null) {
+            localStorage.setItem("basket", JSON.stringify([]))
+        }
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = this.parentElement.getAttribute("data-id");
+        let existProductId = arr.find(p => p.id == productId);
+        if (existProductId == undefined) {
+            arr.push({
+                id: productId,
+                price: this.previousElementSibling.children.item(1).innerText,
+                imageUrl: this.parentElement.firstElementChild.getAttribute("src"),
+                name: this.parentElement.firstElementChild.innerText,
+                count: 1
+            })
+        }
+        else {
+            existProductId.count++;
+            // let oneProductPrice = existProductId.count * parseFloat(existProductId.price);
+            // sumTotalPrice += parseFloat(oneProductPrice)
+            // totalPrice.innerText = sumTotalPrice;
+            // localStorage.setItem("basket", JSON.stringify(arr));
+            // WriteProductCount();
+        }
+
+
+        localStorage.setItem("basket", JSON.stringify(arr));
+        WriteProductCount();
+    })
+
+})
+
+// function WriteProductCount() {
+//     let arr = JSON.parse(localStorage.getItem("basket"));
+//     productCount.innerText = arr.length;
+// }
+// WriteProductCount();
+
+function WriteProductCount() {
+    if (localStorage.getItem("basket") != null) {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let totalCount = 0;
+        let sumTotalPrice = 0;
+        arr.map(product => {
+            totalCount += product.count;
+            let oneProdPrice = product.count * product.price
+            sumTotalPrice += oneProdPrice
+        })
+        productCount.innerText = totalCount;
+        totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2)
+    }
+}
+WriteProductCount();
+
+
+
+// basket section end
