@@ -218,6 +218,7 @@ let totalPrice = document.getElementById("totalPrice")
 let sumTotalPrice = 0;
 
 
+
 // if (localStorage.getItem("basket") != null) {
 //     let arr = JSON.parse(localStorage.getItem("basket"));
 //     arr.forEach(product => {
@@ -230,6 +231,7 @@ btnAdd.forEach(btn => {
         let arr = JSON.parse(localStorage.getItem("basket"));
         let productId = this.parentElement.getAttribute("data-id");
         let existProductId = arr.find(p => p.id == productId);
+
         if (existProductId == undefined) {
             arr.push({
                 id: productId,
@@ -247,13 +249,68 @@ btnAdd.forEach(btn => {
             // localStorage.setItem("basket", JSON.stringify(arr));
             // WriteProductCount();
         }
-
+        if (existProductId.count > 0) {
+            btn.style.display = "none"
+            btn.nextElementSibling.style.display = "block"
+        }
+        else if(existProductId.count==0){
+            btn.style.display = "block"
+            btn.nextElementSibling.style.display = "none"
+        }
+        this.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
 
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
-    })
-
+    });
+    btn.parentElement.onmouseover = function () {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = btn.parentElement.getAttribute("data-id");
+        let existProductId = arr.find(p => p.id == productId);
+        btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
+        if (existProductId.count > 0) {
+            btn.style.display = "none"
+            btn.nextElementSibling.style.display = "block"
+        }
+        else if (existProductId.count == 0) {
+            btn.style.display = "block"
+            btn.nextElementSibling.style.display = "none"
+        }
+        else {
+            btn.style.display = "block"
+        }
+    };
+    btn.parentElement.onmouseleave = function () {
+        btn.style.display = "none"
+        btn.nextElementSibling.style.display = "none"
+    };
+    btn.nextElementSibling.firstElementChild.onclick = function () {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = btn.parentElement.getAttribute("data-id");
+        let existProductId = arr.find(p => p.id == productId);
+        if (existProductId.count > 0) {
+            existProductId.count--
+            btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
+            btn.style.display = "block"
+            btn.nextElementSibling.style.display = "none"
+        }
+       
+        localStorage.setItem("basket", JSON.stringify(arr));
+        WriteProductCount();
+    }
+    btn.nextElementSibling.lastElementChild.onclick = function () {
+        let arr = JSON.parse(localStorage.getItem("basket"));
+        let productId = btn.parentElement.getAttribute("data-id");
+        let existProductId = arr.find(p => p.id == productId);
+        if (existProductId.count >= 1) {
+            existProductId.count++
+            btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
+        }
+        localStorage.setItem("basket", JSON.stringify(arr));
+        WriteProductCount();
+    }
 })
+
+
 
 // function WriteProductCount() {
 //     let arr = JSON.parse(localStorage.getItem("basket"));
@@ -276,7 +333,5 @@ function WriteProductCount() {
     }
 }
 WriteProductCount();
-
-
 
 // basket section end

@@ -574,6 +574,35 @@ body {
                   button {
                     display: block;
                   }
+
+                  .prodCount {
+                    display: none;
+                    position: relative;
+                    text-align: center;
+
+                    :last-child {
+                      right: 10%;
+                      position: absolute;
+                      font-size: 20px;
+                      border-radius: 50%;
+                      border: 1px solid;
+                      padding: 0px 6px;
+                      background: #FFCD00FF;
+                      border: none;
+                    }
+
+                    :first-child {
+                      position: absolute;
+                      left: 10%;
+                      font-size: 20px;
+                      border-radius: 50%;
+                      border: 1px solid;
+                      padding: 0px 6px;
+                      background: #C8C8D7FF;
+                      border: none;
+                    }
+
+                  }
                 }
 
                 i {
@@ -615,11 +644,41 @@ body {
                   width: 100%;
                 }
 
-                button {
+                button,
+                .prodCount {
                   display: none;
                   padding: 5px 60px;
                   margin: 10px 10px;
                   border-radius: 10px;
+                }
+
+                .prodCount {
+                  display: none;
+                  position: relative;
+                  text-align: center;
+
+                  :last-child {
+                    right: 10%;
+                    position: absolute;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    border: 1px solid;
+                    padding: 0px 6px;
+                    background: #FFCD00FF;
+                    border: none;
+                  }
+
+                  :first-child {
+                    position: absolute;
+                    left: 10%;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    border: 1px solid;
+                    padding: 0px 6px;
+                    background: #C8C8D7FF;
+                    border: none;
+                  }
+
                 }
               }
             }

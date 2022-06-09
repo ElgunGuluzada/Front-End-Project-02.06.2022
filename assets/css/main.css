@@ -586,6 +586,34 @@ body main .deadlineSection #deadline .categories .rightSide .product .content:ho
   display: block;
 }
 
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
 body main .deadlineSection #deadline .categories .rightSide .product .content i {
   position: absolute;
   visibility: hidden;
@@ -626,11 +654,40 @@ body main .deadlineSection #deadline .categories .rightSide .product .content im
   width: 100%;
 }
 
-body main .deadlineSection #deadline .categories .rightSide .product .content button {
+body main .deadlineSection #deadline .categories .rightSide .product .content button,
+body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount {
   display: none;
   padding: 5px 60px;
   margin: 10px 10px;
   border-radius: 10px;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
 }
 
 body main .weekendDiscountSection .side {

@@ -71,8 +71,9 @@ if (localStorage.getItem("basket") != null) {
                     tdCount.innerHTML = `${product.count}`
                     tdCount.prepend(minusBtn)
                     tdCount.append(plusBtn)
-                    tdSubTotal.innerText = product.count * parseFloat(product.price).toFixed(2);
-                    sumTotalPrice -= parseFloat(product.price);
+                    let prodPrice = product.count * product.price;
+                    tdSubTotal.innerText = parseFloat(prodPrice).toFixed(2)
+                    sumTotalPrice -= product.price;
                     totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
                 }
                 else {
@@ -92,9 +93,9 @@ if (localStorage.getItem("basket") != null) {
                 tdCount.prepend(minusBtn)
                 tdCount.append(plusBtn)
 
-                tdSubTotal.innerText = product.count * parseFloat(product.price).toFixed(2);
-                sumTotalPrice += parseFloat(product.price).toFixed(2);
-                console.log(sumTotalPrice);
+                let prodPrice = product.count * product.price;
+                tdSubTotal.innerText = parseFloat(prodPrice).toFixed(2)
+                sumTotalPrice += product.price;
                 totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
                 localStorage.setItem("basket", JSON.stringify(arr))
                 WriteProductCount();
