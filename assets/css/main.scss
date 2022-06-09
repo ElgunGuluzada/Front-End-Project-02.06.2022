@@ -1441,7 +1441,6 @@ footer {
     padding: 40px;
 
     .leftPart {
-      background: blue;
       position: relative;
 
       .carousel-indicators {
@@ -1468,12 +1467,78 @@ footer {
     }
 
     .middlePart {
-      margin-left: 10%;
-      background: red;
+      margin-left: 15%;
+      padding: 20px;
     }
 
     .rightPart {
-      background: green;
+
+      p {
+        padding: 5px 20px;
+        background: #FFEEF2FF;
+        color: #BE143CFF;
+      }
+
+      .content {
+        background: #F7F8FDFF;
+
+        span {
+          display: block;
+          padding: 10px 25px;
+
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .tabSection {
+    margin: 4% 13%;
+    background-color: white;
+    padding: 40px;
+
+    .firstTabContent {
+      p {}
+    }
+
+    .secondTabContent {
+      :nth-child(2) {
+        margin-left: 4%;
+      }
+
+      p {
+        margin-top: 20px;
+        border: 1px solid #DEE2E6FF;
+        width: 98%;
+        padding: 7px 10px;
+      }
+    }
+
+    .thirdTabContent {
+      padding: 20px;
+
+      h6 {
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .adminContent {
+        .adminImg {
+          img {
+            border-radius: 50%;
+          }
+
+
+        }
+
+        .adminComment {
+          margin-left: 10px;
+          // flex-direction: column;
+        }
+      }
+
     }
   }
 }

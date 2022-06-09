@@ -1381,7 +1381,6 @@ footer .contactBody .contact .contactNumb {
 }
 
 .productBody .firstSection .leftPart {
-  background: blue;
   position: relative;
 }
 
@@ -1406,12 +1405,61 @@ footer .contactBody .contact .contactNumb {
 }
 
 .productBody .firstSection .middlePart {
-  margin-left: 10%;
-  background: red;
+  margin-left: 15%;
+  padding: 20px;
 }
 
-.productBody .firstSection .rightPart {
-  background: green;
+.productBody .firstSection .rightPart p {
+  padding: 5px 20px;
+  background: #FFEEF2FF;
+  color: #BE143CFF;
+}
+
+.productBody .firstSection .rightPart .content {
+  background: #F7F8FDFF;
+}
+
+.productBody .firstSection .rightPart .content span {
+  display: block;
+  padding: 10px 25px;
+}
+
+.productBody .firstSection .rightPart .content span i {
+  margin-right: 10px;
+}
+
+.productBody .tabSection {
+  margin: 4% 13%;
+  background-color: white;
+  padding: 40px;
+}
+
+.productBody .tabSection .secondTabContent :nth-child(2) {
+  margin-left: 4%;
+}
+
+.productBody .tabSection .secondTabContent p {
+  margin-top: 20px;
+  border: 1px solid #DEE2E6FF;
+  width: 98%;
+  padding: 7px 10px;
+}
+
+.productBody .tabSection .thirdTabContent {
+  padding: 20px;
+}
+
+.productBody .tabSection .thirdTabContent h6 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.productBody .tabSection .thirdTabContent .adminContent .adminImg img {
+  border-radius: 50%;
+}
+
+.productBody .tabSection .thirdTabContent .adminContent .adminComment {
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
