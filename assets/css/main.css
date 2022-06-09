@@ -1372,6 +1372,7 @@ footer .contactBody .contact .contactNumb {
 .productBody {
   position: relative;
   background-color: #F7F8FDFF;
+  margin-bottom: 50px;
 }
 
 .productBody .firstSection {
@@ -1431,7 +1432,7 @@ footer .contactBody .contact .contactNumb {
 .productBody .tabSection {
   margin: 4% 13%;
   background-color: white;
-  padding: 40px;
+  padding: 40px 15px;
 }
 
 .productBody .tabSection .secondTabContent :nth-child(2) {
@@ -1445,10 +1446,6 @@ footer .contactBody .contact .contactNumb {
   padding: 7px 10px;
 }
 
-.productBody .tabSection .thirdTabContent {
-  padding: 20px;
-}
-
 .productBody .tabSection .thirdTabContent h6 {
   font-weight: 600;
   margin-top: 10px;
@@ -1460,6 +1457,147 @@ footer .contactBody .contact .contactNumb {
 
 .productBody .tabSection .thirdTabContent .adminContent .adminComment {
   margin-left: 10px;
+}
+
+.productBody .tabSection .thirdTabContent .secondHead {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent {
+  margin-top: 30px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent .rating .line {
+  margin: 0 15px;
+  margin-bottom: 5px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent form label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent form textarea {
+  background: #F3F4F7FF;
+  border: none;
+  outline: none;
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent form .inp {
+  background: #F3F4F7FF;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+}
+
+.productBody h5 {
+  margin: 0 -4%;
+  background: #F7F8FDFF;
+  padding: 70px 50px 30px;
+}
+
+.productBody .lastSection {
+  margin: 4% 11%;
+}
+
+.productBody .lastSection .product {
+  border: 0.5px solid #d6d6d6;
+  background-color: white;
+}
+
+.productBody .lastSection .product .content {
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.productBody .lastSection .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  width: 18%;
+  z-index: 5;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+          box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+}
+
+.productBody .lastSection .product .content:hover .minimize {
+  right: 8.5%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.productBody .lastSection .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.productBody .lastSection .product .content:hover button {
+  display: block;
+}
+
+.productBody .lastSection .product .content .description {
+  font-size: 12px;
+}
+
+.productBody .lastSection .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
+}
+
+.productBody .lastSection .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+.productBody .lastSection .product .content .heart {
+  top: 20%;
+  right: 2%;
+}
+
+.productBody .lastSection .product .content p {
+  width: 90%;
+  margin: 0 !important;
+}
+
+.productBody .lastSection .product .content p img {
+  width: 60%;
+}
+
+.productBody .lastSection .product .content strong {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2FC573FF;
+}
+
+.productBody .lastSection .product .content img {
+  width: 100%;
+}
+
+.productBody .lastSection .product .content button {
+  display: none;
+  padding: 5px 70px;
+  font-size: 12px;
+  margin: 15px 0px;
+  border-radius: 20px;
 }
 
 @media (min-width: 768px) {
