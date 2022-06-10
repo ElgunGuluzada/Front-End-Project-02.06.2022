@@ -217,13 +217,10 @@ let productCount = document.getElementById("product-count");
 let totalPrice = document.getElementById("totalPrice")
 let sumTotalPrice = 0;
 
-
-
-// if (localStorage.getItem("basket") != null) {
-//     let arr = JSON.parse(localStorage.getItem("basket"));
-//     arr.forEach(product => {
 btnAdd.forEach(btn => {
     btn.addEventListener("click", function (ev) {
+        this.style.display = "none"
+        this.nextElementSibling.style.display = "block"
         ev.preventDefault();
         if (localStorage.getItem("basket") == null) {
             localStorage.setItem("basket", JSON.stringify([]))
@@ -238,26 +235,13 @@ btnAdd.forEach(btn => {
                 price: this.previousElementSibling.children.item(1).innerText,
                 imageUrl: this.parentElement.firstElementChild.getAttribute("src"),
                 name: this.parentElement.firstElementChild.innerText,
-                count: 1
+                count: 1,
             })
         }
         else {
             existProductId.count++;
-            // let oneProductPrice = existProductId.count * parseFloat(existProductId.price);
-            // sumTotalPrice += parseFloat(oneProductPrice)
-            // totalPrice.innerText = sumTotalPrice;
-            // localStorage.setItem("basket", JSON.stringify(arr));
-            // WriteProductCount();
+            this.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count;
         }
-        if (existProductId.count > 0) {
-            btn.style.display = "none"
-            btn.nextElementSibling.style.display = "block"
-        }
-        else if(existProductId.count==0){
-            btn.style.display = "block"
-            btn.nextElementSibling.style.display = "none"
-        }
-        this.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
 
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
@@ -266,14 +250,10 @@ btnAdd.forEach(btn => {
         let arr = JSON.parse(localStorage.getItem("basket"));
         let productId = btn.parentElement.getAttribute("data-id");
         let existProductId = arr.find(p => p.id == productId);
-        btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
-        if (existProductId.count > 0) {
+        if (existProductId != undefined) {
+            btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
             btn.style.display = "none"
             btn.nextElementSibling.style.display = "block"
-        }
-        else if (existProductId.count == 0) {
-            btn.style.display = "block"
-            btn.nextElementSibling.style.display = "none"
         }
         else {
             btn.style.display = "block"
@@ -293,7 +273,10 @@ btnAdd.forEach(btn => {
             btn.style.display = "block"
             btn.nextElementSibling.style.display = "none"
         }
-       
+        let zero = arr.filter(element => element.count > 0);
+        let newArr = [...zero];
+        arr = newArr
+
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
     }
@@ -308,7 +291,9 @@ btnAdd.forEach(btn => {
         localStorage.setItem("basket", JSON.stringify(arr));
         WriteProductCount();
     }
-})
+}
+
+)
 
 
 

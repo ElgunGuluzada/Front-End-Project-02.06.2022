@@ -3,6 +3,7 @@ let rtnBtn = document.getElementById("rtnBtn")
 let productCount = document.getElementById("product-count");
 let totalPrice = document.getElementById("totalPrice")
 let sumTotalPrice = 0;
+rtnBtn.classList.remove("d-none")
 
 if (localStorage.getItem("basket") != null) {
     let arr = JSON.parse(localStorage.getItem("basket"));
@@ -78,6 +79,12 @@ if (localStorage.getItem("basket") != null) {
                 }
                 else {
                     tr.remove()
+                    let zero = arr.filter(element => element.count > 0);
+                    let newArr = [...zero];
+                    arr = newArr
+                    if (table.children.length == 2) {
+                        rtnBtn.classList.remove("d-none")
+                    }
                     // product.count = 0;
                     sumTotalPrice -= parseFloat(product.price);
                     totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
@@ -106,7 +113,9 @@ if (localStorage.getItem("basket") != null) {
                 localStorage.removeItem(this.parentElement)
                 sumTotalPrice -= product.count * product.price;
                 product.count = 0;
-
+                let zero = arr.filter(element => element.count > 0);
+                let newArr = [...zero];
+                arr = newArr
                 totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
                 localStorage.setItem("basket", JSON.stringify(arr));
                 WriteProductCount();
@@ -116,7 +125,6 @@ if (localStorage.getItem("basket") != null) {
         else
             rtnBtn.classList.remove("d-none")
         WriteProductCount()
-
     });
 }
 
