@@ -19,7 +19,7 @@ if (localStorage.getItem("basket") != null) {
             let tdName = document.createElement("td")
             tdName.innerText = product.name
             let tdPrice = document.createElement("td")
-            tdPrice.innerText = product.price
+            tdPrice.innerText = `$ ${product.price}`
             let tdCount = document.createElement("td")
 
             let minusBtn = document.createElement("button")
@@ -53,7 +53,7 @@ if (localStorage.getItem("basket") != null) {
 
             let tdSubTotal = document.createElement("td")
             let oneProductPrice = product.count * product.price
-            tdSubTotal.innerText = oneProductPrice
+            tdSubTotal.innerText = `$ ${oneProductPrice}`
 
             let removeBtn = document.createElement("td")
             let remove = document.createElement("button")
@@ -64,8 +64,8 @@ if (localStorage.getItem("basket") != null) {
             tr.append(tdImage, tdName, tdPrice, tdCount, tdSubTotal, removeBtn)
             table.append(tr)
             sumTotalPrice += product.count * product.price;
-            totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
-
+            totalPrice.innerText = `$ ${parseFloat(sumTotalPrice).toFixed(2)}`;
+            
             minus.onclick = function () {
                 product.count--
                 if (product.count > 0) {
@@ -85,7 +85,6 @@ if (localStorage.getItem("basket") != null) {
                     if (table.children.length == 2) {
                         rtnBtn.classList.remove("d-none")
                     }
-                    // product.count = 0;
                     sumTotalPrice -= parseFloat(product.price);
                     totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
 
@@ -116,6 +115,9 @@ if (localStorage.getItem("basket") != null) {
                 let zero = arr.filter(element => element.count > 0);
                 let newArr = [...zero];
                 arr = newArr
+                if (table.children.length == 2) {
+                    rtnBtn.classList.remove("d-none")
+                }
                 totalPrice.innerText = parseFloat(sumTotalPrice).toFixed(2);
                 localStorage.setItem("basket", JSON.stringify(arr));
                 WriteProductCount();

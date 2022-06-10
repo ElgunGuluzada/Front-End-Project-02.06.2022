@@ -409,82 +409,57 @@ body header .main-navBar nav ul li > a:hover {
   color: #2bc7fbff;
 }
 
-body main .carouselSection #carousel-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-top: -27.5px;
+body main .carouselSection {
+  margin-top: -26.5px;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
-body main .carouselSection #carousel-container #controls #prev {
-  left: 3%;
-}
-
-body main .carouselSection #carousel-container #controls #next {
-  right: 5%;
-}
-
-body main .carouselSection #carousel-container #controls span {
+body main .carouselSection #prev {
   position: absolute;
+  left: 3% !important;
   top: 50%;
+  background: black;
+  padding: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white !important;
+  color: black;
+  opacity: 1 !important;
 }
 
-body main .carouselSection #carousel-container #controls span:hover {
+body main .carouselSection #prev #l {
+  font-size: 20px;
+  color: black !important;
+}
+
+body main .carouselSection #next {
+  position: absolute;
+  right: 3% !important;
+  top: 50%;
+  background: black;
+  padding: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white !important;
+  color: black;
   opacity: 1;
 }
 
-body main .carouselSection #carousel-container #controls span i {
-  background-color: #e5e5e5;
-  padding: 12px 15px;
-  border-radius: 50%;
-  font-size: 15px;
-  position: absolute;
-  cursor: pointer;
+body main .carouselSection #next #r {
+  font-size: 20px;
+  color: black !important;
 }
 
-body main .carouselSection #carousel-container > div:first-child ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  margin: 0;
-}
-
-body main .carouselSection #carousel-container #carousel {
+body main .carouselSection .item {
   position: relative;
-  width: 4000px;
-  padding: 0;
-  margin: 0;
-}
-
-body main .carouselSection #carousel-container #carousel img {
+  cursor: pointer;
   width: 100%;
-  height: 462px;
-  cursor: pointer;
 }
 
-body main .carouselSection #carousel-container #carousel .animate {
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-}
-
-body main .carouselSection #carousel-container #carousel .slide {
-  list-style: none;
-  position: relative;
-  float: left;
-}
-
-body main .carouselSection #carousel-container #carousel .content {
+body main .carouselSection .item .content {
   cursor: pointer;
   position: absolute;
   left: 10%;
@@ -564,8 +539,23 @@ body main .deadlineSection #deadline .categories .rightSide .product .content:ho
   z-index: 5;
   background: white;
   border: 1px solid grey;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
-          box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .discount {
+  top: 4.2%;
+  padding: 5px 15px;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .offer {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content:hover .type {
+  top: 13%;
+  padding: 5px 15px;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content:hover .minimize {
@@ -625,14 +615,57 @@ body main .deadlineSection #deadline .categories .rightSide .product .content i 
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
+body main .deadlineSection #deadline .categories .rightSide .product .content .discount {
+  position: absolute;
+  top: 5%;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2BBEF9FF;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .offer {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #71778EFF;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .type {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
+}
+
 body main .deadlineSection #deadline .categories .rightSide .product .content .minimize {
   top: 5%;
   right: 5%;
 }
 
+body main .deadlineSection #deadline .categories .rightSide .product .content .minimize:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
 body main .deadlineSection #deadline .categories .rightSide .product .content .heart {
   top: 15%;
   right: 2%;
+}
+
+body main .deadlineSection #deadline .categories .rightSide .product .content .heart:hover {
+  background-color: #233A95FF;
+  color: white;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content p {
@@ -654,11 +687,15 @@ body main .deadlineSection #deadline .categories .rightSide .product .content im
   width: 100%;
 }
 
+body main .deadlineSection #deadline .categories .rightSide .product .content button {
+  background: #233A95FF;
+}
+
 body main .deadlineSection #deadline .categories .rightSide .product .content button,
 body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount {
   display: none;
   padding: 5px 60px;
-  margin: 10px 10px;
+  margin: 20px 10px 3px;
   border-radius: 10px;
 }
 
@@ -666,6 +703,8 @@ body main .deadlineSection #deadline .categories .rightSide .product .content .p
   display: none;
   position: relative;
   text-align: center;
+  top: 10px;
+  padding-bottom: 28px;
 }
 
 body main .deadlineSection #deadline .categories .rightSide .product .content .prodCount :last-child {
@@ -716,48 +755,211 @@ body main .carouselProductSection > div {
 
 body main .carouselProductSection .product {
   border: 0.5px solid #d6d6d6;
-  width: 20%;
 }
 
 body main .carouselProductSection .product .content {
-  padding: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 426px;
 }
 
-body main .carouselProductSection .product .content a {
-  font-size: 15px;
-  width: 120%;
+body main .carouselProductSection .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  z-index: 5;
+  max-height: 426px;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+body main .carouselProductSection .product .content:hover .discount {
+  top: 4.2%;
+  padding: 5px 15px;
+}
+
+body main .carouselProductSection .product .content:hover .offer {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+body main .carouselProductSection .product .content:hover .type {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+body main .carouselProductSection .product .content:hover .minimize {
+  right: 8.5%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+body main .carouselProductSection .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+body main .carouselProductSection .product .content:hover button {
+  display: block;
+}
+
+body main .carouselProductSection .product .content:hover .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  top: 15px;
+}
+
+body main .carouselProductSection .product .content:hover .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+body main .carouselProductSection .product .content:hover .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
+body main .carouselProductSection .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+body main .carouselProductSection .product .content .discount {
+  position: absolute;
+  top: 5%;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2BBEF9FF;
+}
+
+body main .carouselProductSection .product .content .offer {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #71778EFF;
+}
+
+body main .carouselProductSection .product .content .type {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
+}
+
+body main .carouselProductSection .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+body main .carouselProductSection .product .content .minimize:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+body main .carouselProductSection .product .content .heart {
+  top: 15%;
+  right: 2%;
+}
+
+body main .carouselProductSection .product .content .heart:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+body main .carouselProductSection .product .content p {
+  width: 90%;
   margin: 0 !important;
-  text-decoration: none;
-  color: black;
 }
 
 body main .carouselProductSection .product .content p img {
-  margin-left: -5px;
-  width: 60%;
+  width: 50% !important;
 }
 
 body main .carouselProductSection .product .content strong {
-  padding: 8px 0;
-  display: block;
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
 body main .carouselProductSection .product .content img {
-  width: 100%;
+  width: 30%;
 }
 
 body main .carouselProductSection .product .content button {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px 30px;
-  margin: 7px 0;
-  width: 100%;
-  border-radius: 20px;
-  outline: none;
+  background: #233A95FF;
+}
+
+body main .carouselProductSection .product .content button,
+body main .carouselProductSection .product .content .prodCount {
+  display: none;
+  padding: 5px 50px;
+  margin: 20px 10px 3px;
+  border-radius: 10px;
+}
+
+body main .carouselProductSection .product .content .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+body main .carouselProductSection .product .content .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
   border: none;
-  background-color: #FFCD00FF;
+}
+
+body main .carouselProductSection .product .content .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
 }
 
 body main .extraPercent {
@@ -774,34 +976,173 @@ body main .extraPercent :first-child :first-child h2 {
 }
 
 body main .extraProductSection > div {
-  margin-left: 11%;
+  margin: 11%;
+  width: 80%;
 }
 
 body main .extraProductSection > div .product {
-  border: 0.5px solid #d6d6d6;
   width: 20%;
 }
 
 body main .extraProductSection > div .product .content {
-  padding: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border: 1px solid;
+  margin: 0 -12px;
 }
 
-body main .extraProductSection > div .product .content a {
-  font-size: 15px;
-  width: 120%;
+body main .extraProductSection > div .product .content:hover {
+  position: absolute;
+  padding: 15px 25px;
+  width: 15.7%;
+  z-index: 5;
+  max-height: 426px;
+  background: white;
+  border: 1px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+body main .extraProductSection > div .product .content:hover .discount {
+  top: 4.2%;
+  padding: 5px 15px;
+}
+
+body main .extraProductSection > div .product .content:hover .offer {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+body main .extraProductSection > div .product .content:hover .type {
+  top: 13%;
+  padding: 5px 15px;
+}
+
+body main .extraProductSection > div .product .content:hover .minimize {
+  right: 8.5%;
+  visibility: visible;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+body main .extraProductSection > div .product .content:hover .heart {
+  right: 8%;
+  visibility: visible;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+body main .extraProductSection > div .product .content:hover button {
+  display: block;
+}
+
+body main .extraProductSection > div .product .content:hover .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  padding-bottom: 12px;
+  left: 15px;
+}
+
+body main .extraProductSection > div .product .content:hover .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+body main .extraProductSection > div .product .content:hover .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
+}
+
+body main .extraProductSection > div .product .content i {
+  position: absolute;
+  visibility: hidden;
+  top: 12%;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+body main .extraProductSection > div .product .content .discount {
+  position: absolute;
+  top: 5%;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #2BBEF9FF;
+}
+
+body main .extraProductSection > div .product .content .offer {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #71778EFF;
+}
+
+body main .extraProductSection > div .product .content .type {
+  position: absolute;
+  top: 15%;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #198E4DFF;
+  background-color: #E5F8EDFF;
+}
+
+body main .extraProductSection > div .product .content .minimize {
+  top: 5%;
+  right: 5%;
+}
+
+body main .extraProductSection > div .product .content .minimize:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+body main .extraProductSection > div .product .content .heart {
+  top: 15%;
+  right: 2%;
+}
+
+body main .extraProductSection > div .product .content .heart:hover {
+  background-color: #233A95FF;
+  color: white;
+}
+
+body main .extraProductSection > div .product .content p {
+  width: 90%;
   margin: 0 !important;
-  text-decoration: none;
-  color: black;
 }
 
 body main .extraProductSection > div .product .content p img {
-  margin-left: -5px;
-  width: 60%;
+  width: 70%;
 }
 
 body main .extraProductSection > div .product .content strong {
-  padding: 8px 0;
-  display: block;
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
@@ -809,6 +1150,49 @@ body main .extraProductSection > div .product .content strong {
 
 body main .extraProductSection > div .product .content img {
   width: 100%;
+}
+
+body main .extraProductSection > div .product .content button {
+  background: #233A95FF;
+}
+
+body main .extraProductSection > div .product .content button,
+body main .extraProductSection > div .product .content .prodCount {
+  display: none;
+  padding: 5px 25px;
+  margin: 5px 10px 0px;
+  border-radius: 10px;
+}
+
+body main .extraProductSection > div .product .content .prodCount {
+  display: none;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+  bottom: 30px;
+}
+
+body main .extraProductSection > div .product .content .prodCount :last-child {
+  right: 10%;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #FFCD00FF;
+  border: none;
+}
+
+body main .extraProductSection > div .product .content .prodCount :first-child {
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 6px;
+  background: #C8C8D7FF;
+  border: none;
 }
 
 body main .lastSectionBody .lastSection {
@@ -1221,7 +1605,7 @@ footer .contactBody .contact .contactNumb {
 }
 
 .shop .shopPage .leftSide .prodCategories {
-  overflow-y: scroll;
+  overflow: auto;
   max-height: 260px;
 }
 
@@ -1685,8 +2069,8 @@ footer .contactBody .contact .contactNumb {
 }
 
 .cntnr {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1703,16 +2087,16 @@ footer .contactBody .contact .contactNumb {
 @media (min-width: 768px) {
   #featurecntnr .carousel-inner .carousel-item-end.active,
   #featurecntnr .carousel-inner .carousel-item-next {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
   }
   #featurecntnr .carousel-inner .carousel-item-start.active,
   #featurecntnr .carousel-inner .carousel-item-prev {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
   }
   #featurecntnr .card img {
-    width: 90%;
+    width: 100%;
   }
   #featurecntnr .carousel-item {
     -webkit-box-pack: justify;
@@ -1761,8 +2145,6 @@ footer .contactBody .contact .contactNumb {
 }
 
 #featurecntnr .indicator:hover {
-  background-color: blue;
-  border: 1px solid blue;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
