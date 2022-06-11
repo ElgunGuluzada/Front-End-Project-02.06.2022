@@ -71,6 +71,215 @@ resetCount.onclick = function () {
         localStorage.removeItem("basket")
         WriteProductCount();
     }
+    WriteProductCount();
+
+}
+// rating
+
+let rating = document.getElementById("rating")
+
+
+oneStar = rating.children.item(0)
+twoStars = rating.children.item(2)
+threeStars = rating.children.item(4)
+fourStars = rating.children.item(6)
+fiveStars = rating.children.item(8)
+
+oneStar.onmouseover = function () {
+    this.firstElementChild.classList.remove("grey")
+    this.firstElementChild.classList.add("gold")
+}
+oneStar.onmouseleave = function () {
+    if (this.classList.contains("active")) {
+
+    }
+    else {
+        this.firstElementChild.classList.add('grey');
+    }
+}
+oneStar.onclick = function () {
+    this.classList.add("active")
+    twoStars.classList.remove("active")
+    threeStars.classList.remove("active")
+    fourStars.classList.remove("active")
+    fiveStars.classList.remove("active")
+    twoStars.firstElementChild.classList.add('grey')
+    twoStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+}
+twoStars.onmouseover = function () {
+    this.firstElementChild.classList.remove('grey');
+    this.firstElementChild.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.classList.add('gold');
+    this.firstElementChild.nextElementSibling.classList.add('gold')
 }
 
-WriteProductCount();
+twoStars.onmouseleave = function () {
+    if (this.classList.contains("active")) {
+
+    }
+    else {
+        this.firstElementChild.classList.add('grey');
+        this.firstElementChild.nextElementSibling.classList.add('grey')
+    }
+}
+twoStars.onclick = function () {
+    oneStar.classList.remove("active")
+    this.classList.add("active")
+    threeStars.classList.remove("active")
+    fourStars.classList.remove("active")
+    fiveStars.classList.remove("active")
+    oneStar.firstElementChild.classList.add('grey')
+    threeStars.firstElementChild.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+}
+
+threeStars.onmouseover = function () {
+    this.firstElementChild.classList.remove('grey');
+    this.firstElementChild.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.remove('grey')
+
+    this.firstElementChild.classList.add('gold');
+    this.firstElementChild.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('gold')
+}
+threeStars.onmouseleave = function () {
+    if (this.classList.contains("active")) {
+
+    }
+    else {
+        this.firstElementChild.classList.add('grey');
+        this.firstElementChild.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    }
+}
+
+threeStars.onclick = function () {
+    oneStar.classList.remove("active")
+    twoStars.classList.remove("active")
+    this.classList.add("active")
+    fourStars.classList.remove("active")
+    fiveStars.classList.remove("active")
+
+    twoStars.firstElementChild.classList.add('grey')
+    twoStars.firstElementChild.nextElementSibling.classList.add('grey')
+    oneStar.firstElementChild.classList.add('grey')
+    fourStars.firstElementChild.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+}
+
+fourStars.onmouseover = function () {
+    this.firstElementChild.classList.remove('grey');
+    this.firstElementChild.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove('grey')
+
+    this.firstElementChild.classList.add('gold');
+    this.firstElementChild.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('gold')
+}
+fourStars.onmouseleave = function () {
+    if (this.classList.contains("active")) {
+
+    }
+    else {
+        this.firstElementChild.classList.add('grey');
+        this.firstElementChild.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    }
+}
+
+fourStars.onclick = function () {
+    oneStar.classList.remove("active")
+    twoStars.classList.remove("active")
+    threeStars.classList.remove("active")
+    this.classList.add("active")
+    fiveStars.classList.remove("active")
+
+    twoStars.firstElementChild.classList.add('grey')
+    twoStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    oneStar.firstElementChild.classList.add('grey')
+    fiveStars.firstElementChild.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    fiveStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+}
+
+fiveStars.onmouseover = function () {
+    this.firstElementChild.classList.remove('grey');
+    this.firstElementChild.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove('grey')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.remove('grey')
+
+    this.firstElementChild.classList.add('gold');
+    this.firstElementChild.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('gold')
+    this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('gold')
+}
+fiveStars.onmouseleave = function () {
+    if (this.classList.contains("active")) {
+
+    }
+    else {
+        this.firstElementChild.classList.add('grey');
+        this.firstElementChild.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+        this.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    }
+}
+
+fiveStars.onclick = function () {
+    oneStar.classList.remove("active")
+    twoStars.classList.remove("active")
+    threeStars.classList.remove("active")
+    fourStars.classList.remove("active")
+    this.classList.add("active")
+
+    twoStars.firstElementChild.classList.add('grey')
+    twoStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.classList.add('grey')
+    threeStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
+    fourStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
+    oneStar.firstElementChild.classList.add('grey')
+}

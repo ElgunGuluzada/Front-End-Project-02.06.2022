@@ -1900,6 +1900,14 @@ footer .contactBody .contact .contactNumb {
   margin-left: 10px;
 }
 
+.productBody .tabSection .thirdTabContent .adminContent .adminComment .bxs-star.gold {
+  color: #FFCD00FF;
+}
+
+.productBody .tabSection .thirdTabContent .adminContent .adminComment .bxs-star.grey {
+  color: #D6D6E5FF;
+}
+
 .productBody .tabSection .thirdTabContent .secondHead {
   border-bottom: 1px solid;
   padding-bottom: 20px;
@@ -1909,17 +1917,33 @@ footer .contactBody .contact .contactNumb {
   margin-top: 30px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent .rating .line {
+.productBody .tabSection .thirdTabContent .emailContent #rating .active i {
+  text-shadow: rgba(0, 0, 0, 0) 0px;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating i {
+  cursor: pointer;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating .bxs-star.gold {
+  color: #FFCD00FF;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent #rating .bxs-star.grey {
+  color: #D6D6E5FF;
+}
+
+.productBody .tabSection .thirdTabContent .emailContent .line {
   margin: 0 15px;
   margin-bottom: 5px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form label {
+.productBody .tabSection .thirdTabContent form label {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form textarea {
+.productBody .tabSection .thirdTabContent form textarea {
   background: #F3F4F7FF;
   border: none;
   outline: none;
@@ -1928,7 +1952,7 @@ footer .contactBody .contact .contactNumb {
   padding: 20px;
 }
 
-.productBody .tabSection .thirdTabContent .emailContent form .inp {
+.productBody .tabSection .thirdTabContent form .inp {
   background: #F3F4F7FF;
   width: 100%;
   margin-bottom: 10px;
@@ -1937,22 +1961,22 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody h5 {
+h5 {
   margin: 0 -4%;
   background: #F7F8FDFF;
   padding: 70px 50px 30px;
 }
 
-.productBody .lastSection {
+.lastSection {
   margin: 4% 11%;
 }
 
-.productBody .lastSection .product {
+.lastSection .product {
   border: 0.5px solid #d6d6d6;
   background-color: white;
 }
 
-.productBody .lastSection .product .content {
+.lastSection .product .content {
   padding: 15px 25px;
   cursor: pointer;
   position: relative;
@@ -1960,7 +1984,7 @@ footer .contactBody .contact .contactNumb {
           transition-duration: 0.5s;
 }
 
-.productBody .lastSection .product .content:hover {
+.lastSection .product .content:hover {
   position: absolute;
   padding: 15px 25px;
   width: 18.7%;
@@ -1971,40 +1995,40 @@ footer .contactBody .contact .contactNumb {
           box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
 }
 
-.productBody .lastSection .product .content:hover .discount {
+.lastSection .product .content:hover .discount {
   top: 4.2%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .offer {
+.lastSection .product .content:hover .offer {
   top: 13%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .type {
+.lastSection .product .content:hover .type {
   top: 13%;
   padding: 5px 15px;
 }
 
-.productBody .lastSection .product .content:hover .minimize {
+.lastSection .product .content:hover .minimize {
   right: 8.5%;
   visibility: visible;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
 
-.productBody .lastSection .product .content:hover .heart {
+.lastSection .product .content:hover .heart {
   right: 8%;
   visibility: visible;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
 }
 
-.productBody .lastSection .product .content:hover button {
+.lastSection .product .content:hover button {
   display: block;
 }
 
-.productBody .lastSection .product .content:hover .prodCount {
+.lastSection .product .content:hover .prodCount {
   display: none;
   position: relative;
   text-align: center;
@@ -2012,7 +2036,7 @@ footer .contactBody .contact .contactNumb {
   padding-bottom: 24px;
 }
 
-.productBody .lastSection .product .content:hover .prodCount :last-child {
+.lastSection .product .content:hover .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -2023,7 +2047,7 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content:hover .prodCount :first-child {
+.lastSection .product .content:hover .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
@@ -2034,11 +2058,11 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content .description {
+.lastSection .product .content .description {
   font-size: 12px;
 }
 
-.productBody .lastSection .product .content i {
+.lastSection .product .content i {
   position: absolute;
   visibility: hidden;
   top: 12%;
@@ -2049,7 +2073,7 @@ footer .contactBody .contact .contactNumb {
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
 }
 
-.productBody .lastSection .product .content .discount {
+.lastSection .product .content .discount {
   position: absolute;
   top: 5%;
   font-size: 11px;
@@ -2060,7 +2084,7 @@ footer .contactBody .contact .contactNumb {
   background-color: #2BBEF9FF;
 }
 
-.productBody .lastSection .product .content .offer {
+.lastSection .product .content .offer {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -2071,7 +2095,7 @@ footer .contactBody .contact .contactNumb {
   background-color: #71778EFF;
 }
 
-.productBody .lastSection .product .content .type {
+.lastSection .product .content .type {
   position: absolute;
   top: 15%;
   font-size: 10px;
@@ -2082,46 +2106,46 @@ footer .contactBody .contact .contactNumb {
   background-color: #E5F8EDFF;
 }
 
-.productBody .lastSection .product .content .minimize {
+.lastSection .product .content .minimize {
   top: 5%;
   right: 5%;
 }
 
-.productBody .lastSection .product .content .minimize:hover {
+.lastSection .product .content .minimize:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.productBody .lastSection .product .content .heart {
+.lastSection .product .content .heart {
   top: 15%;
   right: 2%;
 }
 
-.productBody .lastSection .product .content .heart:hover {
+.lastSection .product .content .heart:hover {
   background-color: #233A95FF;
   color: white;
 }
 
-.productBody .lastSection .product .content p {
+.lastSection .product .content p {
   width: 90%;
   margin: 0 !important;
 }
 
-.productBody .lastSection .product .content p img {
+.lastSection .product .content p img {
   width: 60%;
 }
 
-.productBody .lastSection .product .content strong {
+.lastSection .product .content strong {
   font-size: 10px;
   font-weight: 700;
   color: #2FC573FF;
 }
 
-.productBody .lastSection .product .content img {
+.lastSection .product .content img {
   width: 100%;
 }
 
-.productBody .lastSection .product .content button {
+.lastSection .product .content button {
   display: none;
   padding: 5px 70px;
   font-size: 12px;
@@ -2129,21 +2153,21 @@ footer .contactBody .contact .contactNumb {
   border-radius: 20px;
 }
 
-.productBody .lastSection .product .content button,
-.productBody .lastSection .product .content .prodCount {
+.lastSection .product .content button,
+.lastSection .product .content .prodCount {
   display: none;
   padding: 5px 70px;
   margin: 20px 10px 3px;
   border-radius: 10px;
 }
 
-.productBody .lastSection .product .content .prodCount {
+.lastSection .product .content .prodCount {
   display: none;
   position: relative;
   text-align: center;
 }
 
-.productBody .lastSection .product .content .prodCount :last-child {
+.lastSection .product .content .prodCount :last-child {
   right: 10%;
   position: absolute;
   font-size: 20px;
@@ -2154,7 +2178,7 @@ footer .contactBody .contact .contactNumb {
   border: none;
 }
 
-.productBody .lastSection .product .content .prodCount :first-child {
+.lastSection .product .content .prodCount :first-child {
   position: absolute;
   left: 10%;
   font-size: 20px;
