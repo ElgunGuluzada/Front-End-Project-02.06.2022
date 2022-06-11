@@ -2053,11 +2053,26 @@ footer {
         &:hover {
           position: absolute;
           padding: 15px 25px;
-          width: 18%;
+          width: 18.7%;
           z-index: 5;
           background: white;
           border: 1px solid grey;
           box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 11px;
+
+          .discount {
+            top: 4.2%;
+            padding: 5px 15px;
+          }
+
+          .offer {
+            top: 13%;
+            padding: 5px 15px;
+          }
+
+          .type {
+            top: 13%;
+            padding: 5px 15px;
+          }
 
           .minimize {
             right: 8.5%;
@@ -2076,6 +2091,38 @@ footer {
           button {
             display: block;
           }
+
+          .prodCount {
+            display: none;
+            position: relative;
+            text-align: center;
+            top: 15px;
+            padding-bottom: 24px;
+
+
+            :last-child {
+              right: 10%;
+              position: absolute;
+              font-size: 20px;
+              border-radius: 50%;
+              border: 1px solid;
+              padding: 0px 6px;
+              background: #FFCD00FF;
+              border: none;
+            }
+
+            :first-child {
+              position: absolute;
+              left: 10%;
+              font-size: 20px;
+              border-radius: 50%;
+              border: 1px solid;
+              padding: 0px 6px;
+              background: #C8C8D7FF;
+              border: none;
+            }
+
+          }
         }
 
         .description {
@@ -2092,14 +2139,58 @@ footer {
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 2px, rgba(17, 17, 26, 0.1) 0px 16px 4px;
         }
 
+        .discount {
+          position: absolute;
+          top: 5%;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 5px 15px;
+          color: white;
+          border-radius: 5px;
+          background-color: #2BBEF9FF;
+        }
+
+        .offer {
+          position: absolute;
+          top: 15%;
+          font-size: 10px;
+          font-weight: 500;
+          padding: 5px 15px;
+          border-radius: 5px;
+          color: white;
+          background-color: #71778EFF;
+        }
+
+        .type {
+          position: absolute;
+          top: 15%;
+          font-size: 10px;
+          font-weight: 500;
+          padding: 5px 15px;
+          border-radius: 15px;
+          color: #198E4DFF;
+          background-color: #E5F8EDFF;
+        }
+
         .minimize {
           top: 5%;
           right: 5%;
+
+          &:hover {
+            background-color: #233A95FF;
+            color: white;
+          }
         }
 
+
         .heart {
-          top: 20%;
+          top: 15%;
           right: 2%;
+
+          &:hover {
+            background-color: #233A95FF;
+            color: white;
+          }
         }
 
         p {
@@ -2127,6 +2218,43 @@ footer {
           font-size: 12px;
           margin: 15px 0px;
           border-radius: 20px;
+        }
+
+        button,
+        .prodCount {
+          display: none;
+          padding: 5px 70px;
+          margin: 20px 10px 3px;
+          border-radius: 10px;
+        }
+
+        .prodCount {
+          display: none;
+          position: relative;
+          text-align: center;
+
+          :last-child {
+            right: 10%;
+            position: absolute;
+            font-size: 20px;
+            border-radius: 50%;
+            border: 1px solid;
+            padding: 0px 6px;
+            background: #FFCD00FF;
+            border: none;
+          }
+
+          :first-child {
+            position: absolute;
+            left: 10%;
+            font-size: 20px;
+            border-radius: 50%;
+            border: 1px solid;
+            padding: 0px 6px;
+            background: #C8C8D7FF;
+            border: none;
+          }
+
         }
       }
     }
