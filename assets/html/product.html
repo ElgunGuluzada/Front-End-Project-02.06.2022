@@ -181,6 +181,9 @@
 
         <!-- Indicators/dots -->
         <div class="container-fluid productBody">
+            <h6 class="header">HOME >
+                MEATS & SEAFOOD >
+                ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</h6>
             <section class="firstSection">
                 <div class="container ">
                     <h4>All Natural Italian-Style Chicken Meatballs</h4>
@@ -191,7 +194,6 @@
                         SKU: ZU49VOR</h6>
                     <div class="col-11 d-flex">
                         <div class="row leftPart col-4">
-
                             <!-- The slideshow/carousel -->
                             <div id="productInfo" class="carousel-inner w-100">
                                 <div data-id="62" class="carousel-item active">
@@ -219,16 +221,18 @@
                             </div>
                         </div>
                         <div class="col-4 middlePart content">
-                            <p><span style="text-decoration: line-through;"> $9.35 </span>$ <span>7.25</span></p>
+                            <p><span style="text-decoration: line-through;"> $9.35 </span> <span
+                                    class="price">$<span>7.25</span></span></p>
                             <strong>IN STOCK</strong>
-                            <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.
+                            <p class="desc">Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada
+                                tincidunt.
                                 Class aptent taciti sociosqu ad litora torquent</p>
-                            <button type="submit" style="cursor: pointer;">-</button> <span
-                                style="margin: 0 5px;">1</span> <button type="submit"
-                                style="cursor: pointer; margin-right: 20px;">+</button>
+                            <button class="minBtn" type="submit">-</button> <span class="count">1</span>
+                            <button class="plusBtn" type="submit">+</button>
                             <button id="productBtn">Add To Cart</button>
-                            <input style="width: 40px;" disabled value="99" min="0" max="99" type="number">
-                            <button type="submit">Reset</button>
+                            <input style="width: 40px;" disabled value="1" min="0" max="99" type="number">
+                            <span id="errMes" class="d-none">Max 99!</span>
+                            <button class="reset" type="submit">Reset</button>
                             <p><i class='bx bx-heart'></i>ADD TO WISHLIST </p>
                             <p>Type: Organic</p>
                             <p>MFG: Jun 4.2021</p>

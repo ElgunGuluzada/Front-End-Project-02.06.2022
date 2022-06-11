@@ -3,7 +3,8 @@ let Product = document.getElementById("productInfo")
 let minusBtn = Btn.parentElement.children.item(3)
 let prodCount = Btn.parentElement.children.item(4)
 let plusBtn = Btn.parentElement.children.item(5)
-let resetCount = Btn.nextElementSibling.nextElementSibling
+let resetCount = Btn.nextElementSibling.nextElementSibling.nextElementSibling
+let errMes = document.getElementById("errMes")
 
 if (localStorage.getItem("basket") == null) {
     localStorage.setItem("basket", JSON.stringify([]))
@@ -21,7 +22,7 @@ Btn.addEventListener("click", function (ev) {
     if (existProductId == undefined) {
         arr.push({
             id: productId,
-            price: this.parentElement.firstElementChild.lastElementChild.innerText,
+            price: this.parentElement.firstElementChild.lastElementChild.lastElementChild.innerText,
             imageUrl: Product.firstElementChild.firstElementChild.getAttribute("src"),
             name: Product.parentElement.parentElement.parentElement.firstElementChild.innerText,
             count: parseInt(prodCount.innerText),
@@ -33,16 +34,27 @@ Btn.addEventListener("click", function (ev) {
         }
         else {
             if (Btn.nextElementSibling.value <= 99) {
+                errMes.classList.add("d-none")
                 existProductId.count += parseInt(Btn.nextElementSibling.value)
             }
             else {
-                alert("max 99")
+                errMes.classList.remove("d-none")
             }
         }
     }
+
     localStorage.setItem("basket", JSON.stringify(arr));
     WriteProductCount();
 })
+
+Btn.nextElementSibling.onmouseleave = function () {
+    if (Btn.nextElementSibling.value > 99) {
+        errMes.classList.remove("d-none")
+    }
+    else {
+        errMes.classList.add("d-none")
+    }
+}
 
 minusBtn.onclick = function () {
     if (prodCount.innerText > 0) {
@@ -182,9 +194,9 @@ threeStars.onclick = function () {
     fourStars.classList.remove("active")
     fiveStars.classList.remove("active")
 
+    oneStar.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.nextElementSibling.classList.add('grey')
-    oneStar.firstElementChild.classList.add('grey')
     fourStars.firstElementChild.classList.add('grey')
     fourStars.firstElementChild.nextElementSibling.classList.add('grey')
     fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
@@ -226,12 +238,12 @@ fourStars.onclick = function () {
     this.classList.add("active")
     fiveStars.classList.remove("active")
 
+    oneStar.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.nextElementSibling.classList.add('grey')
     threeStars.firstElementChild.classList.add('grey')
     threeStars.firstElementChild.nextElementSibling.classList.add('grey')
     threeStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
-    oneStar.firstElementChild.classList.add('grey')
     fiveStars.firstElementChild.classList.add('grey')
     fiveStars.firstElementChild.nextElementSibling.classList.add('grey')
     fiveStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
@@ -272,6 +284,7 @@ fiveStars.onclick = function () {
     fourStars.classList.remove("active")
     this.classList.add("active")
 
+    oneStar.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.classList.add('grey')
     twoStars.firstElementChild.nextElementSibling.classList.add('grey')
     threeStars.firstElementChild.classList.add('grey')
@@ -281,5 +294,4 @@ fiveStars.onclick = function () {
     fourStars.firstElementChild.nextElementSibling.classList.add('grey')
     fourStars.firstElementChild.nextElementSibling.nextElementSibling.classList.add('grey')
     fourStars.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.classList.add('grey')
-    oneStar.firstElementChild.classList.add('grey')
 }

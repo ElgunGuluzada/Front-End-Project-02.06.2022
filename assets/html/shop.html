@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/bacola-removebg-preview.png" type="image/icon type">
+
     <script src="https://kit.fontawesome.com/9891a9465b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="/assets/css/main.css">
-
-    <title>Front End Project</title>
+    <title>Home 3 – Bacola – Grocery Market and Food Theme</title>
 </head>
 
 <body>
@@ -81,10 +82,13 @@
                 </div>
                 <div class="right-third-nav col-3 d-flex justify-content-start">
                     <div class="userIcon"><i class="fas fa-user"></i></div>
-                    <div class="basket px-3">
-                        <span class="price">$0.00</span>
-                        <i class='bx bx-basket bx-tada basketIcon'><span class="count">0</span></i>
-                    </div>
+                    <a href="/assets/html/card.html">
+                        <div class="basket px-3">
+                            $ <span id="totalPrice">0.00</span>
+                            <i class='bx bx-basket bx-tada basketIcon'><span id="product-count"
+                                    class="count">0</span></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -250,10 +254,10 @@
                     </div>
                     <h6>FILTER BY PRICE</h6>
                     <div class="prodFilter">
-                         <div class="progress-wrapper">
+                        <div class="progress-wrapper">
                             <!-- <div class="progress">
                             </div>  -->
-                          </div> 
+                        </div>
                         <datalist id="slider-list">
                             <option>0</option>
                             <option>10</option>
@@ -298,150 +302,209 @@
                     <div class="products">
                         <div class="d-flex" style="flex-wrap: wrap;">
                             <div class="product  col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="62" class="content">
                                     <img src="/assets/img/product-image-62-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="60" class="content">
                                     <img src="/assets/img/product-image-60-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">24%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="46" class="content">
                                     <img src="/assets/img/product-image-46-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">19%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type">ORGANIC</span>
                                     <strong>IN STOCK</strong>
-                                    <p><img src="/assets/img/starts/5star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="45" class="content">
                                     <img src="/assets/img/product-image-45-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">View Products</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
 
                             <div class="product  col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="59" class="content">
                                     <img src="/assets/img/product-image-59-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="58" class="content">
                                     <img src="/assets/img/product-image-58-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="57" class="content">
                                     <img src="/assets/img/product-image-57-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
-                                    <p><img src="/assets/img/starts/5star.JPG" alt=""></p>
-                                    <p class="price"><span style="text-decoration: line-through;"> $11.68 </span>$10.58
-                                    </p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
+                                <div data-id="50" class="content">
+                                    <img src="/assets/img/product-image-50-346x310.jpg" alt="">
                                     <i class="fas minimize fa-compress"></i>
                                     <i class='bx heart bx-heart'></i>
-                                    <img src="/assets/img/product-image-50-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">View Products</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
 
                             <div class="product  col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="56" class="content">
                                     <img src="/assets/img/shop/product-image-56-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="61" class="content">
                                     <img src="/assets/img/shop/product-image-61-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
-                                    <i class="fas minimize fa-compress"></i>
-                                    <i class='bx heart bx-heart'></i>
+                                <div data-id="55" class="content">
                                     <img src="/assets/img/shop/product-image-55-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <i class="fas minimize fa-compress"></i>
+                                    <i class='bx heart bx-heart'></i>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
-                                    <p><img src="/assets/img/starts/5star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                             <div class="product col-3">
-                                <div class="content">
+                                <div data-id="54" class="content">
+                                    <img src="/assets/img/shop/product-image-54-346x310.jpg" alt="">
                                     <i class="fas minimize fa-compress"></i>
                                     <i class='bx heart bx-heart'></i>
-                                    <img src="/assets/img/shop/product-image-54-346x310.jpg" alt="">
-                                    <p class="description">All Natural Italian-Style Chicken Meatballs </p>
+                                    <p>All Natural Italian-Style Chicken Meatballs </p>
+                                    <span class="discount">23%</span>
+                                    <span class="offer d-none">RECOMMENDED</span>
+                                    <span class="type d-none"></span>
                                     <strong>IN STOCK</strong>
                                     <p><img src="/assets/img/starts/4star.JPG" alt=""></p>
-                                    <p><span style="text-decoration: line-through;"> $11.68 </span>$10.58</p>
-                                    <button class="btn btn-primary">Add To Card</button>
+                                    <p><span style="text-decoration: line-through;"> $9.35</span> $<span
+                                            class="newPrice">7.25</span></p>
+                                    <button class="btn btn-primary btn-add">Add To Card</button>
+                                    <p class="prodCount"><span>-</span> <span>0</span><span>+</span></p>
                                 </div>
                             </div>
                         </div>
@@ -603,7 +666,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-
+<script src="/assets/script/script.js"></script>
 <script src="/assets/script/shop.js"></script>
 
 </html>

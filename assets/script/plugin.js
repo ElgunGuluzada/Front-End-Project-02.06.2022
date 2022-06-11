@@ -106,3 +106,12 @@ try {
     console.log(error);
 }
 // product carousel end
+
+
+
+// product page on click
+
+let prod = document.getElementById("firstProd")
+prod.onclick = function () {
+    window.location = "assets/html/product.html"
+}

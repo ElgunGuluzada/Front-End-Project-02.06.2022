@@ -23,8 +23,7 @@ $(document).ready(function () {
 
     //wishlist end
 
-
-
+  
     // deadline end
 
 
@@ -88,7 +87,7 @@ btnAdd.forEach(btn => {
         let arr = JSON.parse(localStorage.getItem("basket"));
         let productId = btn.parentElement.getAttribute("data-id");
         let existProductId = arr.find(p => p.id == productId);
-        
+
         if (existProductId != undefined) {
             btn.nextElementSibling.firstElementChild.nextElementSibling.innerText = existProductId.count
             btn.style.display = "none"
